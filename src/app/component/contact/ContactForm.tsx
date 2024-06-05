@@ -22,7 +22,7 @@ const ContactForm = ({ ContactFormText }: any) => {
                   id={field.id}
                   placeholder={field.placeholder}
                   className="w-full p-3 border border-gray-300 rounded-md"
-                  rows="4"
+                  rows={4}
                 ></textarea>
               ) : field.type === "phone" ? (
                 <PhoneInput

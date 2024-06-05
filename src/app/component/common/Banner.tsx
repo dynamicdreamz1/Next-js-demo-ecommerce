@@ -26,7 +26,7 @@ const Banner = ({sliderData}:any) => {
   return (
     <div className="w-[100%] relative">
       <Slider {...settings}>
-        {sliderData.map((data, index) => (
+        {sliderData.map((data:any, index:any) => (
           <div
             key={index}
             className="slide relative"

@@ -151,7 +151,7 @@ const ProductDetails = ({ productDetails }: any) => {
       <div className="flex flex-col mb-4 gap-2 text-[14px] leading-[21px] text-[#666666]">
         {productDetails.service.map((items: any, index: number) => (
           <div className="flex gap-2" key={index}>
-            <Image src={items.image} width={16} height={16} alt="Shipping" />
+            <Image src={items.image} width={16} height={16} alt="Shipping"  />
             <p>{items.title}</p>
           </div>
         ))}

@@ -5,9 +5,9 @@ import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import Card from "../common/Card";
 
-const TrendingSlider = ({ trendingData }) => {
+const TrendingSlider = ({ trendingData }:any) => {
   // Custom previous arrow component
-  const CustomPrevArrow = (props) => {
+  const CustomPrevArrow = (props:any) => {
     const { onClick } = props;
     return (
       <div
@@ -20,7 +20,7 @@ const TrendingSlider = ({ trendingData }) => {
   };
 
   // Custom next arrow component
-  const CustomNextArrow = (props) => {
+  const CustomNextArrow = (props:any) => {
     const { onClick } = props;
     return (
       <div
@@ -81,7 +81,7 @@ const TrendingSlider = ({ trendingData }) => {
 
   return (
     <Slider {...settings} className="flex items-stretch p-0">
-      {trendingData.map((product, index) => (
+      {trendingData.map((product:any, index:any) => (
         <div key={index} className="outline-none focus:outline-none px-2">
           <Card product={product} />
         </div>

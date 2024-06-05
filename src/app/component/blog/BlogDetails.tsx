@@ -15,7 +15,7 @@ const Blogs = ({ initialBlog, initialBlogId }:any) => {
     if (currentBlog !== initialBlogId) {
       fetchBlogDetails(currentBlog);
     }
-  }, [currentBlog]);
+  }, [currentBlog,initialBlogId]);
 
   const fetchBlogDetails = async (blogId:any) => {
     setLoading(true);

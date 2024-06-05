@@ -9,12 +9,12 @@ import {
 import ProgressBar from "../component/common/ProgressBar";
 import Button from "../component/common/Button";
 import Image from "next/image";
-import { useRouter,useSearchParams } from 'next/navigation'
+import { useRouter } from 'next/navigation'
 
-const page = () => {
-  const [cartItems, setCartItems] = useState(JSON.parse(localStorage.getItem("cart")));
-  const [user, setUser] = useState(JSON.parse(localStorage.getItem("userAddresses")));
-  const [currentStep, setCurrentStep] = useState(0); // Set second stage as default
+const Cart = () => {
+  const [cartItems, setCartItems] = useState([]);
+  const [user, setUser] = useState([]);
+  let currentStep = 1;
   const router = useRouter()
 
   const getCartData = async () => {
@@ -46,7 +46,7 @@ const page = () => {
       <div className="mb-10">
         <ProgressBar currentStep={currentStep} />
       </div>
-      {currentStep === 0 && <ShippingCart removeFromCart={removeFromCart} cartItems={cartItems} getCartData={getCartData} user={user} />}
+      {currentStep === 1 && <ShippingCart removeFromCart={removeFromCart} cartItems={cartItems} getCartData={getCartData} user={user} />}
 
       <div className="flex justify-between mt-5 flex-col lg:flex-row gap-3 lg:gap-0">
             <Button
@@ -74,4 +74,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Cart;

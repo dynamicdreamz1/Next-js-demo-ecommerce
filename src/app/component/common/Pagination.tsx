@@ -1,15 +1,19 @@
-"use client"
 import React, { useState } from "react";
 import ReactPaginate from "react-paginate";
 
-const Pagination = ({ pageCount, onPageChange }) => {
+interface PaginationProps {
+  pageCount: number;
+  onPageChange: (selectedPage: number) => void;
+}
+
+const Pagination: React.FC<PaginationProps> = ({ pageCount, onPageChange }) => {
   const [currentPage, setCurrentPage] = useState(0);
 
   // Function to handle page click
-  function handlePageClick(selectedPage) {
+  const handlePageClick = (selectedPage: { selected: number }) => {
     setCurrentPage(selectedPage.selected);
     onPageChange(selectedPage.selected);
-  }
+  };
 
   return (
     <div>

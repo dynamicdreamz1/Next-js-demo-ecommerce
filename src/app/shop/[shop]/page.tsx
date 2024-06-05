@@ -1,6 +1,6 @@
 import React from "react";
 import ProductPage from "../../component/productDetails/ProductPage";
-import { getHomeInformation, getProductDetails,getProductsList } from "../../../service/index";
+import { getHomeInformation,getProductsList } from "../../../service/index";
 import Subscribe from "../../component/home/Subscribe";
 import FollowUs from "../../component/home/FollowUs";
 import Service from "../../component/home/Service";
@@ -9,7 +9,7 @@ const Page = async ({ params }:any) => {
   const initialProductId = parseInt(params.shop);
   // const data = await getProductDetails(initialProductId);
   const initialProducts = await getProductsList();
-  let data = await getProductDetails(initialProductId) || initialProducts.find((data)=> data.id == initialProductId) 
+  let data = initialProducts.find((data:any)=> data.id == initialProductId) 
   const homeData = await getHomeInformation();
 
 

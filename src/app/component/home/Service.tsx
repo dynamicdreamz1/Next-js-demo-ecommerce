@@ -8,7 +8,7 @@ const Service = ({homePageText}:any) => {
         {homePageText.items?.map((item:any, index:any) => (
           <div key={index} className="flex items-center space-x-4">
             <div className="flex-shrink-0 pr-4"> {/* Adjust the padding here */}
-              <Image src={item.image} alt={item.title} width={37} height={37} className="object-cover" />
+              <Image src={item.image} alt={item.title} width={37} height={37} style={{ width: "auto", height: "auto" }} className="object-cover" />
             </div>
             <div className="flex-1">
               <h2 className="font-bold text-start text-[#323232] text-[16px]">{item.title}</h2>

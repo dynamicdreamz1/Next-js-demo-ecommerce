@@ -1,7 +1,7 @@
 import React from "react";
 import {
   getHomeInformation,
-  getBlogsDetails,
+  // getBlogsDetails,
   getBlogs,
 } from "../../../service/index";
 import Blogs from "../../component/blog/BlogDetails";
@@ -12,11 +12,12 @@ import Service from "../../component/home/Service";
 const Page = async ({ params }: any) => {
   const initialBlogId = parseInt(params.blog);
   // const data = await getBlogsDetails(initialBlogId);
-  const { data: blogsData } = await getBlogs();
+  const response = await getBlogs();
+  const blogsData = response?.data || []; // handle the case when response is undefined
 
   let data =
-    (await getBlogsDetails(initialBlogId)) ||
-    blogsData.items.find((data) => data.id == initialBlogId);
+    // (await getBlogsDetails(initialBlogId)) ||
+    blogsData.items.find((data: any) => data.id === initialBlogId);
   const homeData = await getHomeInformation();
 
   return (

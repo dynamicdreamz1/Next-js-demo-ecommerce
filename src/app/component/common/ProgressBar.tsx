@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons/faCheck";
 
-const ProgressBar = ({ currentStep }) => {
+const ProgressBar = ({ currentStep }:any) => {
   return (
     <div className="w-full lg:w-[70%] ">
     <div className="flex justify-between items-center flex-col lg:flex-row">
@@ -19,7 +19,7 @@ const ProgressBar = ({ currentStep }) => {
     </div>
 
     <div className="h-2 bg-white shadow-sm rounded-full mt-3 relative flex">
-      {[1, 2, 3].map((step, index) => (
+      {[1, 2, 3].map((index) => (
         <div key={index} className="flex-1 relative">
           <div
             className={`h-full bg-[#649C2C] rounded-full transition-width duration-300 ease-in-out absolute left-0 ${

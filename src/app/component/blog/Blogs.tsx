@@ -4,29 +4,33 @@ import BlogCard from "../common/BlogCard";
 import Pagination from "../common/Pagination";
 import Link from "next/link";
 import { getBlogs } from "../../../service/index";
-import { useRouter,useSearchParams } from 'next/navigation'
+import { useSearchParams } from "next/navigation";
 
-const Blogs = ({ initialBlogs, totalPages }:any) => {
-  const [filteredBlogs, setFilteredBlogs] = useState(initialBlogs.items.slice(0, 8));
+const Blogs = ({ initialBlogs, totalPages }: any) => {
+  const [filteredBlogs, setFilteredBlogs] = useState(
+    initialBlogs.items.slice(0, 8)
+  );
   const [pageCount, setPageCount] = useState(totalPages);
-  const router = useRouter()
+  const [currentPage, setCurrentPage] = useState(1); // Initialized currentPage to 1
   const searchParams = useSearchParams();
   const page = searchParams.get("page");
-  const [currentPage, setCurrentPage] = useState(page || 1);
+
+  useEffect(() => {
+    setCurrentPage(page ? parseInt(page, 10) : 1); // Parse page to integer
+  }, [page]);
 
   useEffect(() => {
     fetchBlogs(currentPage);
   }, [currentPage]);
 
-  const fetchBlogs = async (page:any) => {
-    const { data, total }:any = await getBlogs(page);
-    router.push(`?page=${page}`);
-    setFilteredBlogs(data.items.slice(page, 9));
+  const fetchBlogs = async (page: any) => {
+    const { data, total }: any = await getBlogs(page);
+    setFilteredBlogs(data.items.slice(0, 8)); // Corrected the slicing here
     setPageCount(total);
   };
 
-  const handlePageChange = (selectedPage:any) => {
-    setCurrentPage(selectedPage+1);
+  const handlePageChange = (selectedPage: any) => {
+    setCurrentPage(selectedPage + 1);
   };
 
   return (
@@ -42,7 +46,7 @@ const Blogs = ({ initialBlogs, totalPages }:any) => {
       </div>
 
       <div className="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:md:grid-cols-4 gap-4 mx-auto mt-10 p-5">
-        {filteredBlogs.map((data:any, index:any) => (
+        {filteredBlogs.map((data: any, index: any) => (
           <div key={index}>
             <Link href={`/blog/${data.id}`}>
               <BlogCard

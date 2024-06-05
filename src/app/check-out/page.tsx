@@ -1,17 +1,14 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import CheckOut from "../component/cart/CheckOut";
-import {
-  removeCartItem,
-  getCartItems,
-  getUserDetails,
-} from "../../service/index";
+import { getCartItems, getUserDetails } from "../../service/index";
 import ProgressBar from "../component/common/ProgressBar";
+import { Suspense } from "react";
 
-const checkout = () => {
-  const [cartItems, setCartItems] = useState(JSON.parse(localStorage.getItem("cart")));
-  const [user, setUser] = useState(JSON.parse(localStorage.getItem("userAddresses")));
-  const [currentStep, setCurrentStep] = useState(1); // Set second stage as default
+const CheckOutPage = () => {
+  const [cartItems, setCartItems] = useState([]);
+  const [user, setUser] = useState([]);
+  const currentStep = 2; // Set second stage as default
 
   const getCartData = async () => {
     const data = await getCartItems();
@@ -25,13 +22,21 @@ const checkout = () => {
   }, []);
 
   return (
-    <div className="container mx-auto my-10 p-5 lg:px-0">
-          <div className="mb-10">
-        <ProgressBar currentStep={currentStep} />
+    <Suspense>
+      <div className="container mx-auto my-10 p-5 lg:px-0">
+        <div className="mb-10">
+          <ProgressBar currentStep={currentStep} />
+        </div>
+        {currentStep === 2 && (
+          <CheckOut
+            cartItems={cartItems}
+            user={user}
+            getCartData={getCartData}
+          />
+        )}
       </div>
-      {currentStep === 1 && <CheckOut cartItems={cartItems} user={user} getCartData={getCartData}/>}
-    </div>
+    </Suspense>
   );
 };
 
-export default checkout;
+export default CheckOutPage;

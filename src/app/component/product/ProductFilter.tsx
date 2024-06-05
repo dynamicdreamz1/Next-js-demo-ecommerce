@@ -1,10 +1,21 @@
 import React, { useState } from "react";
 
-const ProductFilter = ({ filterCategory, onCategoryChange, onRatingChange }: any) => {
-  const [selectedCategories, setSelectedCategories] = useState([]);
-  const [selectedRatings, setSelectedRatings] = useState([]);
+interface Category {
+  id: number;
+  title: string;
+}
 
-  const handleCategoryChange = (category: string) => {
+interface Props {
+  filterCategory: Category[];
+  onCategoryChange: (selectedCategories: number[]) => void;
+  onRatingChange: (selectedRatings: number[]) => void;
+}
+
+const ProductFilter = ({ filterCategory, onCategoryChange, onRatingChange }: Props) => {
+  const [selectedCategories, setSelectedCategories] = useState<number[]>([]);
+  const [selectedRatings, setSelectedRatings] = useState<number[]>([]);
+
+  const handleCategoryChange = (category: Category) => {
     const updatedCategories = selectedCategories.includes(category.id)
       ? selectedCategories.filter(c => c !== category.id)
       : [...selectedCategories, category.id];

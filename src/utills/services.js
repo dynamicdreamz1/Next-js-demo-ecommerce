@@ -15,6 +15,13 @@ export const countryCodes = [
   { name: "RU", code: "+7" },
 ];
 
+export const results = [
+  { "id": 1, "title": "Search Result 1", "image": "/images/menu-1.svg" },
+  { "id": 2, "title": "Search Result 2", "image": "/images/menu--2.svg" },
+  { "id": 3, "title": "Search Result 3", "image": "/images/menu-1.svg" }
+]
+
+
 export const countries = ["USA", "Canada", "UK"];
 export const statesByCountry = {
   USA: ["New York", "California", "Texas"],

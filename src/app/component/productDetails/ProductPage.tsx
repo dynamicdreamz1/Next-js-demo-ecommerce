@@ -1,10 +1,10 @@
 import React from "react";
-import Image from "./Image";
+import ImageGallery from "./ImageGallery";
 import ProductDetails from "./ProductDetails";
 import ProductInformation from "./ProductInformation";
 import Breadcrumbs from "../common/Breadcrumbs";
 
-const ProductPage = ({ product }) => {
+const ProductPage = ({ product }:any) => {
   const bredCumData = [
     { name: "Home", link: "/" },
     { name: "Products", link: "/shop" },
@@ -18,7 +18,7 @@ const ProductPage = ({ product }) => {
       </div>
       <div className="w-[100%] flex lg:flex-row flex-col">
         <div className="lg:w-[50%] w-[100%]">
-          <Image productImages={product.productImages} />
+          <ImageGallery productImages={product.productImages} />
         </div>
         <div className="lg:w-[50%] w-[100%]">
           <ProductDetails productDetails={product} />

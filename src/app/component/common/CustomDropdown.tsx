@@ -5,7 +5,7 @@ import React, { useState } from "react";
 
 const CustomDropdown = ({ options, onSelectOption }: any) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState(null);
+  const [selectedOption, setSelectedOption] = useState<{ label: string; value: any } | null>(null);
 
   const handleToggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -38,7 +38,6 @@ const CustomDropdown = ({ options, onSelectOption }: any) => {
       {isOpen && (
         <div className="absolute z-50	py-5 mt-1 w-full  bg-[#FFF7F4] shadow-lg">
           <ul
-            tabIndex="-1"
             role="listbox"
             aria-labelledby="listbox-label"
             aria-activedescendant="listbox-item-3"

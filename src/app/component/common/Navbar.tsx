@@ -88,6 +88,7 @@ const Navbar = ({ headerItems }: any) => {
                 width={110}
                 height={53}
                 alt="Logo"
+                style={{ width: "auto", height: "auto" }} 
               />
             </Link>
           </div>

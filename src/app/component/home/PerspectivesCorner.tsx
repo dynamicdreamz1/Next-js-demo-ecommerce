@@ -6,7 +6,7 @@ import Image from "next/image";
 const PerspectivesCorner = ({homePageText}:any) => {
   const [hoveredImageIndex, setHoveredImageIndex] = useState(null);
 
-  const handleMouseEnter = (index) => {
+  const handleMouseEnter = (index:any) => {
     setHoveredImageIndex(index);
   };
 

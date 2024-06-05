@@ -20,22 +20,6 @@ export const getHomeInformation = async (section) => {
   }
 };
 
-export const getBannerData = async () => {
-  try {
-    const apiUrl = `${baseUrl}/slider.json`;
-
-    const response = await axios.get(apiUrl, {
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-
-    return response.data;
-  } catch (error) {
-    console.error("Error fetching data:", error);
-    throw error;
-  }
-};
 
 export const getHeaderData = async () => {
   try {
@@ -92,9 +76,9 @@ export const getProducts = async (types) => {
   try {
     let apiUrl = `${baseUrl}/products.json`;
 
-    if (types) {
-      apiUrl = `${apiUrl}?${types}`; // Corrected line
-    }
+    // if (types) {
+    //   apiUrl = `${apiUrl}?${types}`; // Corrected line
+    // }
     // if (types) {
     //   apiUrl += `&_page=1&_per_page=9`;
     // } else {
@@ -121,12 +105,13 @@ export const getInstaProducts = async (types) => {
     //   apiUrl += `?_page=1&_per_page=4`;
     // }
     const response = await axios.get(apiUrl, {
+      mode: 'no-cors',
       headers: {
         "Content-Type": "application/json",
       },
     });
 
-    return response.data;
+    return response.data.data;
   } catch (error) {
     console.error("Error fetching data:", error);
     throw error;
@@ -187,6 +172,7 @@ export const getSearchResult = async () => {
     let apiUrl = `${baseUrl}/results.json`;
 
     const response = await axios.get(apiUrl, {
+      mode: 'no-cors',
       headers: {
         "Content-Type": "application/json",
       },
@@ -215,28 +201,6 @@ export const getBlogs = async (pages) => {
     });
 
     return { data: response.data, total: response.data.items.length / 9 };
-  } catch (error) {
-    // console.error('Error fetching about:', error);
-  }
-};
-
-export const getCountryCodes = async (pages) => {
-  try {
-    let apiUrl = `${baseUrl}/countryCodes.json`;
-
-    // if (pages) {
-    //   apiUrl += `?_page=${pages}&_per_page=8`;
-    // } else {
-    //   apiUrl += `?_page=1&_per_page=8`;
-    // }
-
-    const response = await axios.get(apiUrl, {
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-
-    return response.data;
   } catch (error) {
     // console.error('Error fetching about:', error);
   }

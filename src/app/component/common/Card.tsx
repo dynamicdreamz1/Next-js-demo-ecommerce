@@ -51,9 +51,10 @@ const Card = ({ product }: any) => {
           className="object-cover w-full h-[305px]"
           src={
             product?.productImages &&
-            product?.productImages[Math.floor(Math.random() * 5) + 1]
+            product?.productImages[1]
           }
           alt="Product Image"
+          objectFit="cover"
           width={315}
           height={305}
         />
@@ -105,7 +106,7 @@ const Card = ({ product }: any) => {
           </motion.button>
         </motion.div>
       </div>
-      <Link href={`/shop/${product.id}`} passHref>
+      <Link href={`/shop/${product.id}`}>
         <div className="py-4 flex flex-col items-start">
           <div className="text-[16px] leading-[24px] text-[#232323] font-normal">
             {product.name}

@@ -5,9 +5,50 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { getInstaProducts } from "../../../service/index";
 
+interface Product {
+  id: number;
+  name: string;
+  productImages: string[];
+  price: number;
+  discountPrice: number;
+  category: number;
+  bestSeller: boolean;
+  topRated: boolean;
+  Accessories: boolean;
+  Featured: boolean;
+  rating: number;
+  type: string;
+  popularity: number;
+  date: string;
+  description: string;
+  fullDescription: string;
+  sku: string;
+  size: {
+    isAvailable: boolean;
+    title: string;
+  }[];
+  service: {
+    image: string;
+    title: string;
+  }[];
+  reviews: {
+    userAvatar: string;
+    stars: number;
+    description: string;
+    name: string;
+    date: string;
+  }[];
+  additionalInfo: {
+    image: string;
+    title: string;
+    description: string;
+  }[];
+}
+
+
 const FollowUs = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
-  const [products, setProducts] = useState([]);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [products, setProducts] = useState<Product[]>([]);
 
   const fetchTabProduct = async () => {
     try {

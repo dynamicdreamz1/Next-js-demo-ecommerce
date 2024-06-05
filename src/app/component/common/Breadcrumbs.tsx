@@ -5,13 +5,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons/faChevronRight";
 import { usePathname } from "next/navigation";
 
-const Breadcrumbs = ({ breadcrumbs }) => {
+const Breadcrumbs = ({ breadcrumbs }:any) => {
   const pathname = usePathname();
 
   return (
     <nav aria-label="Breadcrumb">
       <ol className="flex space-x-1 text-gray-500">
-        {breadcrumbs.map((breadcrumb, index) => (
+        {breadcrumbs.map((breadcrumb:any, index:any) => (
           <li key={index} className="flex items-center font-normal">
             {index !== 0 && (
               <span className="mx-2">

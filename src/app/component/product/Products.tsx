@@ -7,24 +7,70 @@ import Breadcrumbs from "../common/Breadcrumbs";
 import Pagination from "../common/Pagination";
 import Image from "next/image";
 const PER_PAGE = 9;
+interface Product {
+  id: number;
+  name: string;
+  productImages: string[];
+  price: number;
+  discountPrice: number;
+  category: number;
+  bestSeller: boolean;
+  topRated: boolean;
+  Accessories: boolean;
+  Featured: boolean;
+  rating: number;
+  type: string;
+  popularity: number;
+  date: string;
+  description: string;
+  fullDescription: string;
+  sku: string;
+  size: {
+    isAvailable: boolean;
+    title: string;
+  }[];
+  service: {
+    image: string;
+    title: string;
+  }[];
+  reviews: {
+    userAvatar: string;
+    stars: number;
+    description: string;
+    name: string;
+    date: string;
+  }[];
+  additionalInfo: {
+    image: string;
+    title: string;
+    description: string;
+  }[];
+}
 
-const Products = ({ initialProducts, filterCategory }: any) => {
-  // State for all products
-  const [allProducts, setAllProducts] = useState(initialProducts);
-  // State for filtered products
-  const [filteredProducts, setFilteredProducts] = useState(
-    initialProducts.slice(0, PER_PAGE)
-  );
-  // State for selected filter option
-  const [selectedFilter, setSelectedFilter] = useState(null);
-  // State for selected categories
-  const [selectedCategories, setSelectedCategories] = useState([]);
-  // State for selected ratings
-  const [selectedRatings, setSelectedRatings] = useState([]);
-  // State for current page
+interface Category {
+  id: number;
+  title: string;
+}
+
+interface FilterCategory {
+  filter: { value: string; label: string }[];
+  categories: Category[];
+}
+
+const Products: React.FC<{
+  initialProducts: Product[];
+  filterCategory: FilterCategory;
+}> = ({ initialProducts, filterCategory }) => {
+  const [allProducts] = useState<Product[]>(initialProducts);
+  const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
+  const [selectedFilter, setSelectedFilter] = useState<{
+    value: string;
+    label: string;
+  } | null>(null);
+  const [selectedCategories, setSelectedCategories] = useState<number[]>([]);
+  const [selectedRatings, setSelectedRatings] = useState<number[]>([]);
   const [currentPage, setCurrentPage] = useState(0);
-  // State for total number of pages
-  const [totalPage, setTotalPage] = useState(
+  const [totalPage] = useState(
     Math.ceil(initialProducts.length / PER_PAGE)
   );
 
@@ -36,7 +82,7 @@ const Products = ({ initialProducts, filterCategory }: any) => {
     selectedCategories,
     selectedRatings,
     currentPage,
-    allProducts,
+    allProducts
   ]);
 
   // Function to filter products
@@ -68,18 +114,14 @@ const Products = ({ initialProducts, filterCategory }: any) => {
           break;
         case "4":
           filtered = filtered.sort(
-            (a, b) => new Date(b.date) - new Date(a.date)
+            (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
           );
           break;
         case "5":
-          filtered = filtered.sort(
-            (a, b) => parseFloat(a.discountPrice) - parseFloat(b.discountPrice)
-          );
+          filtered = filtered.sort((a, b) => a.discountPrice - b.discountPrice);
           break;
         case "6":
-          filtered = filtered.sort(
-            (a, b) => parseFloat(b.discountPrice) - parseFloat(a.discountPrice)
-          );
+          filtered = filtered.sort((a, b) => b.discountPrice - a.discountPrice);
           break;
         default:
           break;
@@ -93,22 +135,22 @@ const Products = ({ initialProducts, filterCategory }: any) => {
   };
 
   // Handler for selecting filter option
-  const handleSelectOption = (option) => {
+  const handleSelectOption = (option: any) => {
     setSelectedFilter(option);
   };
 
   // Handler for changing selected categories
-  const handleCategoryChange = (categories) => {
+  const handleCategoryChange = (categories: any) => {
     setSelectedCategories(categories);
   };
 
   // Handler for changing selected ratings
-  const handleRatingChange = (ratings) => {
+  const handleRatingChange = (ratings: any) => {
     setSelectedRatings(ratings);
   };
 
   // Handler for changing current page
-  const handlePageChange = (selectedPage) => {
+  const handlePageChange = (selectedPage: any) => {
     setCurrentPage(selectedPage);
   };
 

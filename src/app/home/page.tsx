@@ -20,9 +20,9 @@ export default async function Page() {
       <Banner sliderData={homeData.slider} />
       <TrendingEssentials homePageText={homeData.topTrendingOn} ProductsData={ProductsData}/>
       <UnderEye homePageText={homeData.UnderEye} />
-      <TopTrending homePageText={homeData.topTrending} />
+      <TopTrending homePageText={homeData.topTrending} ProductsData={ProductsData}/>
       <QueriesCovered homePageText={homeData.QueriesCovered} />
-      <TrendingProducts homePageText={homeData.TrendingProducts} />
+      <TrendingProducts homePageText={homeData.TrendingProducts} ProductsData={ProductsData}/>
       <Feedback homePageText={homeData.Feedback} />
       <PerspectivesCorner homePageText={homeData.PerspectivesCorner} />
       <FollowUs />

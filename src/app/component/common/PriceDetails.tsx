@@ -2,7 +2,7 @@ import React from "react";
 import Button from "./Button";
 import { usePathname } from "next/navigation";
 
-const calculateTotal = (data) => {
+const calculateTotal = (data:any) => {
   // Initialize variables
   let totalPrice = 0;
   let totalDiscount = 0;
@@ -12,7 +12,7 @@ const calculateTotal = (data) => {
   const TotalShippingFee = 10.0;
 
   // Iterate through data and calculate totals
-  data.forEach((item) => {
+  data.forEach((item:any) => {
     totalPrice += item.price * item.quantity;
     totalDiscount += (item.price - item.discountPrice) * item.quantity;
   });

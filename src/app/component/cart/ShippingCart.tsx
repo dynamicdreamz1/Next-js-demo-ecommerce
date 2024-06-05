@@ -7,7 +7,7 @@ const ShippingCart = ({ removeFromCart, getCartData, cartItems }: any) => {
   const [editItem, setEditItem] = useState<any>(null);
   const [size, setSize] = useState("");
   const [quantity, setQuantity] = useState(0);
-  const [product, setProduct] = useState({});
+  const [product, setProduct] = useState({ size: [] });
 
   const openEditPopup = async (item: any) => {
     setEditItem(item);
@@ -22,7 +22,10 @@ const ShippingCart = ({ removeFromCart, getCartData, cartItems }: any) => {
   };
 
   const updateItem = async () => {
-    await updateCartItem(editItem.productId, { quantity: quantity, size: size });
+    await updateCartItem(editItem.productId, {
+      quantity: quantity,
+      size: size,
+    });
     getCartData();
     closeEditPopup();
   };
@@ -127,15 +130,19 @@ const ShippingCart = ({ removeFromCart, getCartData, cartItems }: any) => {
                       key={index}
                       type="button"
                       className={`bg-white py-1 border border-gray-300 -px-1 font-normal text-center w-[67px] h-[40px] 
-                        ${index + 1 === product.size.length ? "rounded-r-lg" : ""} 
+                        ${
+                          index + 1 === product.size.length
+                            ? "rounded-r-lg"
+                            : ""
+                        } 
                         ${!data.isAvailable ? "opacity-20 border-gray-300" : ""}
                         ${
                           size === data.title ? "bg-gray-300" : "" // Change background color of selected size
                         }
                         ${index === 0 ? "rounded-l-lg" : ""}`}
-                                onClick={() => setSize(data.title)}
-                                disabled={!data.isAvailable}
-                              >
+                      onClick={() => setSize(data.title)}
+                      disabled={!data.isAvailable}
+                    >
                       {data.title}
                     </button>
                   ))}

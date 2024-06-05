@@ -1,13 +1,16 @@
+import Image from "next/image";
 import React from "react";
 
 const Subscribe = ({ homePageText }: any) => {
   return (
     <div className="container mb-10 mt-10 mx-auto relative">
       <div className="absolute top-1 right-0 bg-cover bg-no-repeat">
-        <img
+        <Image
           src="/images/pngwing 2.svg"
           alt="bh"
-          className="w-[230px] h-[206px] object-cover z-[99]"
+          className="object-cover z-[99]"
+          width={230}
+          height={206}
         />
       </div>
       <div className="flex flex-col gap-5 items-start justify-start mx-auto border border-solid border-[#FB7800] bg-[#FB7800] p-4 md:p-14 rounded-md">
