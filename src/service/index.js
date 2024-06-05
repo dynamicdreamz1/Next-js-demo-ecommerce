@@ -331,7 +331,7 @@ export const removeCartItem = async (itemId) => {
     removeCartItemLocalStorage(itemId);
   }
 };
-
+ 
 const addToCartLocalStorage = (data) => {
   try {
     let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
