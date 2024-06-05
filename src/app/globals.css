@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,18 +18,94 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Apply the Poppins font globally */
+html, body {
+  font-family: "Poppins", serif;
+  background-color: #FFF7F4;
+  font-weight: 500;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.playfair-font{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.newsletter::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+.highlight {
+  text-decoration: #FB7800 wavy underline;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 18px;
+  width: auto;
+}
+
+
+.line-clamp-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Custom CSS */
+[type="checkbox"]:checked {
+  background-color: black;
+  background-image: url('/images/checks.svg');
+  background-size: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+[type="checkbox"]:checked::before {
+  content: "";
+  font-size: 16px;
+  line-height: 1;
+  color: white;
+}
+
+[type="checkbox"]:checked + label {
+  color: black;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  cursor: pointer;
+}
+
+.pagination a {
+  padding: 10px;
+  border: 1px solid #EEEEEE;
+  color: #555555;
+}
+
+
+.pagination__link--active a {
+  border: 1px solid #EEEEEE;
+  background: #FFEDE7;
+  color: #555555;
+}
+
+.pagination__link--disabled a {
+  color: rgb(198, 197, 202);
+  border: 1px solid rgb(198, 197, 202);
+}
+
+.icon {
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  transition: background-color 0.3s ease;
+  margin: auto;
+}
+
+.icon:hover {
+ cursor: pointer;
+  background-color: #FB7800;
 }

@@ -1,0 +1,107 @@
+{
+  "icon": "/images/logo.svg",
+  "description": "Clarity gives you the blocks and components you need to create a truly professional website.",
+  "menus": [
+    {
+      "menuTitle": "Company",
+      "menus": [
+        {
+          "id": 1,
+          "title": "About",
+          "link": "/about"
+        },
+        {
+          "id": 2,
+          "title": "Features",
+          "link": "/Features"
+        },
+        {
+          "id": 3,
+          "title": "Shop",
+          "link": "/shop"
+        },
+        {
+          "id": 4,
+          "title": "Log in/ Register ",
+          "link": "/login"
+        }
+      ]
+    },
+    {
+      "menuTitle": "Company",
+      "menus": [
+        {
+          "id": 1,
+          "title": "About",
+          "link": "/about"
+        },
+        {
+          "id": 2,
+          "title": "Features",
+          "link": "/Features"
+        },
+        {
+          "id": 3,
+          "title": "Shop",
+          "link": "/Shop"
+        },
+        {
+          "id": 4,
+          "title": "Log in/ Register ",
+          "link": "/login"
+        }
+      ]
+    },
+    {
+      "menuTitle": "Company",
+      "menus": [
+        {
+          "id": 1,
+          "title": "About",
+          "link": "/about"
+        },
+        {
+          "id": 2,
+          "title": "Features",
+          "link": "/Features"
+        },
+        {
+          "id": 3,
+          "title": "Shop",
+          "link": "/Shop"
+        },
+        {
+          "id": 4,
+          "title": "Log in/ Register ",
+          "link": "/login"
+        }
+      ]
+    }
+  ],
+  "social": [
+    {
+      "id": 1,
+      "title": "facebook",
+      "icon": "faFacebookF",
+      "link": "/abcd.com"
+    },
+    {
+      "id": 2,
+      "title": "Twitter",
+      "icon": "faTwitter",
+      "link": "/abcd.com"
+    },
+    {
+      "id": 3,
+      "title": "Instagram",
+      "icon": "faInstagram",
+      "link": "/abcd.com"
+    },
+    {
+      "id": 4,
+      "title": "Github",
+      "icon": "faGithub",
+      "link": "/abcd.com"
+    }
+  ]
+}

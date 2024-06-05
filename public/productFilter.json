@@ -1,0 +1,56 @@
+{
+  "categories":[
+    {
+      "id": 1,
+      "title": "Bubble Bath, Oils & Soaks"
+    },
+    {
+      "id": 2,
+      "title": "Exfoliants & Scrubs"
+    },
+    {
+      "id": 3,
+      "title": "Feminine Washes & Wipes"
+    },
+    {
+      "id": 4,
+      "title": "Bath & Body Gift Sets"
+    },
+    {
+      "id": 5,
+      "title": "Shampoo & Conditioner"
+    },
+    {
+      "id": 6,
+      "title": "Home Fragrances"
+    },
+    {
+      "id": 7,
+      "title": "Health & Wellness"
+    },
+    {
+      "id": 8,
+      "title": "Hair Styling Products"
+    },
+    {
+      "id": 9,
+      "title": "Home Spa & Massage"
+    },
+    {
+      "id": 10,
+      "title": "Moisturisers"
+    },
+    {
+      "id": 11,
+      "title": "Facial Care"
+    }
+  ],
+  "filter":[
+    { "value": "1", "label": "Default sorting" },
+    { "value": "2", "label": "Sort by popularity" },
+    { "value": "3", "label": "Sort by average rating" },
+    { "value": "4", "label": "Sort by latest" },
+    { "value": "5", "label": "Sort by price: low to high" },
+    { "value": "6", "label": "Sort by price: high to low" }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "topTrendingOn": {
+    "section": 1,
+    "title": "Top Trending On",
+    "bg": "",
+    "highliteTitle": "essentials",
+    "middleText": "",
+    "highliteTitle2": "",
+    "endText": "",
+    "queryImage": "",
+    "description": "Lorem ipsum dolor sit amet consectetur. Dignissim nulla eros quis libero. Bibendum dui imperdiet sed ultrices vitae.",
+    "link": "/text",
+    "items": [],
+    "tabs": []
+  },
+  "slider": [
+    {
+      "id": 1,
+      "mainTitle": "beauty accessories",
+      "image": "/images/slider/slider-1.svg",
+      "title": "SPA and beauty accessories",
+      "description": "Discover a symphony of timeless beauty, where elegance unfolds in every cherished moment of self-care bliss."
+    },
+    {
+      "id": 2,
+      "mainTitle": "beauty accessories",
+      "image": "/images/slider/slider-2.svg",
+      "title": "beauty accessories",
+      "description": "Discover a symphony of timeless beauty, where elegance unfolds in every cherished moment of self-care bliss."
+    }
+  ],
+  "UnderEye": {
+    "section": 2,
+    "title": "Under-Eye",
+    "bg": "/images/bg.svg",
+    "highliteTitle": "Bags Removal Cream",
+    "middleText": "",
+    "highliteTitle2": "",
+    "endText": "",
+    "queryImage": "",
+    "description": "Lorem ipsum dolor sit amet consectetur. Dignissim nulla eros quis libero. Bibendum dui imperdiet sed ultrices vitae.",
+    "link": "/text",
+    "items": [
+      {
+        "id": 1,
+        "image": "/images/Frame-0.svg",
+        "title": "Lightweight Formula",
+        "description": "Duis eleifend ipsum a justo vehicula, ut vestibulum sem volutpat. Donec at aliquam purus. Mauris."
+      },
+      {
+        "id": 2,
+        "image": "/images/Frame-1.svg",
+        "title": "Hygienically Manufactured",
+        "description": "Duis eleifend ipsum a justo vehicula, ut vestibulum sem volutpat. Donec at aliquam purus. Mauris."
+      },
+      {
+        "id": 3,
+        "image": "/images/Frame-2.svg",
+        "title": "In-house Quality Control",
+        "description": "Duis eleifend ipsum a justo vehicula, ut vestibulum sem volutpat. Donec at aliquam purus. Mauris."
+      }
+    ],
+    "tabs": []
+  },
+  "topTrending": {
+    "section": 3,
+    "title": "Top Trending Products",
+    "bg": "",
+    "highliteTitle": "",
+    "middleText": "",
+    "highliteTitle2": "",
+    "endText": "",
+    "queryImage": "",
+    "description": "",
+    "link": "",
+    "items": [],
+    "tabs": [
+      {
+        "id": 1,
+        "title": "Best seller",
+        "code": "bestSeller"
+      },
+      {
+        "id": 2,
+        "title": "Top Rated",
+        "code": "topRated"
+      },
+      {
+        "id": 3,
+        "title": "Accessories",
+        "code": "Accessories"
+      },
+      {
+        "id": 4,
+        "title": "Featured",
+        "code": "Featured"
+      }
+    ]
+  },
+  "QueriesCovered": {
+    "section": 4,
+    "title": "Seek ",
+    "bg": "",
+    "highliteTitle": "Answers: ",
+    "middleText": "We've Got Your ",
+    "highliteTitle2": " Queries ",
+    "endText": "Covered.",
+    "queryImage": "/images/pr-query-1.svg",
+    "description": "",
+    "link": "",
+    "items": [
+      {
+        "title": "Lightweight Formula",
+        "content": "Duis eleifend ipsum a justo vehicula, ut vestibulum sem volutpat. Donec at aliquam purus. Mauris."
+      },
+      {
+        "title": "Lightweight Formula",
+        "content": "Duis eleifend ipsum a justo vehicula, ut vestibulum sem volutpat. Donec at aliquam purus. Mauris."
+      },
+      {
+        "title": "Lightweight Formula",
+        "content": "Duis eleifend ipsum a justo vehicula, ut vestibulum sem volutpat. Donec at aliquam purus. Mauris."
+      },
+      {
+        "title": "Lightweight Formula",
+        "content": "Duis eleifend ipsum a justo vehicula, ut vestibulum sem volutpat. Donec at aliquam purus. Mauris."
+      }
+    ],
+    "tabs": []
+  },
+  "TrendingProducts": {
+    "section": 5,
+    "title": "Top Trending Products",
+    "bg": "",
+    "highliteTitle": "",
+    "middleText": "",
+    "highliteTitle2": "",
+    "endText": "",
+    "queryImage": "",
+    "description": "",
+    "link": "",
+    "items": [],
+    "tabs": [
+      {
+        "id": 1,
+        "title": "Soap",
+        "code": "soap"
+      },
+      {
+        "id": 2,
+        "title": "Face Wash",
+        "code": "face-wash"
+      },
+      {
+        "id": 3,
+        "title": "Featured",
+        "code": "featured"
+      },
+      {
+        "id": 4,
+        "title": "Washes & Wipes",
+        "code": "washes-wipes"
+      }
+    ]
+  },
+  "Feedback": {
+    "section": 6,
+    "title": "",
+    "bg": "",
+    "highliteTitle": "",
+    "middleText": "",
+    "highliteTitle2": "",
+    "endText": "",
+    "queryImage": "",
+    "description": "",
+    "link": "",
+    "items": [
+      {
+        "avatar": "/images/avtar1.svg",
+        "quote": "Lorem ipsum dolor sit amet consectetur. Platea vulputate nisl sit elit ullamcorper odio ipsum sed posuere.  dolor sit amet consectetur. Platea vulputate",
+        "author": "Lightweight Formula",
+        "location": "Florida, USA"
+      }
+    ],
+    "tabs": []
+  },
+  "PerspectivesCorner": {
+    "section": 7,
+    "title": "Perspectives Corner",
+    "bg": "",
+    "highliteTitle": "",
+    "middleText": "",
+    "highliteTitle2": "",
+    "endText": "",
+    "queryImage": "",
+    "description": "",
+    "link": "",
+    "items": [
+      {
+        "id": 1,
+        "image": "/images/items/item1.svg",
+        "title": "SPRING – SUMMER TRENDING 2020",
+        "description": "Typography is the work of typesetters, compositors, typographers, graphic designers."
+      },
+      {
+        "id": 2,
+        "image": "/images/items/item2.svg",
+        "title": "SPRING – SUMMER TRENDING 2020",
+        "description": "Typography is the work of typesetters, compositors, typographers, graphic designers."
+      },
+      {
+        "id": 3,
+        "image": "/images/items/item3.svg",
+        "title": "SPRING – SUMMER TRENDING 2020",
+        "description": "Typography is the work of typesetters, compositors, typographers, graphic designers."
+      }
+    ],
+    "tabs": []
+  },
+  "Service": {
+    "section": 8,
+    "title": "",
+    "bg": "",
+    "highliteTitle": "",
+    "middleText": "",
+    "highliteTitle2": "",
+    "endText": "",
+    "queryImage": "",
+    "description": "",
+    "link": "",
+    "items": [
+      {
+        "id": 1,
+        "image": "/images/service/service-1.svg",
+        "title": "Free Shipping",
+        "description": "Lorem ipsum dolor sit amet consectetur."
+      },
+      {
+        "id": 2,
+        "image": "/images/service/service-2.svg",
+        "title": "Safe & Secure",
+        "description": "Lorem ipsum dolor sit amet consectetur."
+      },
+      {
+        "id": 3,
+        "image": "/images/service/service-3.svg",
+        "title": "Gift Wrapping",
+        "description": "Lorem ipsum dolor sit amet consectetur."
+      },
+      {
+        "id": 4,
+        "image": "/images/service/service-4.svg",
+        "title": "24/7 Support",
+        "description": "Lorem ipsum dolor sit amet consectetur."
+      }
+    ],
+    "tabs": []
+  },
+  "Subscribe": {
+    "section": 9,
+    "title": " Subscribe to our newsletter",
+    "bg": "",
+    "highliteTitle": "",
+    "middleText": "",
+    "highliteTitle2": "",
+    "endText": "",
+    "queryImage": "",
+    "description": "",
+    "link": "",
+    "items": [],
+    "tabs": []
+  }
+}
