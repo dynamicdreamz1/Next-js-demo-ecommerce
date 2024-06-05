@@ -1,0 +1,39 @@
+{
+    "heading": "Bridge the Communication Gap",
+    "description": "Lorem ipsum dolor sit amet consectetur. Quis urna tincidunt sociis dui volutpat. Duis viverra arcu lectus nisl nunc praesent sagittis in cursus. Quis mauris sed scelerisque lectus. Convallis malesuada cursus faucibus eget eu tellus diam. Montes nisl elementum lectus etiam. Duis eget non venenatis faucibus sed at quam morbi. Aliquam dignissim enim ullamcorper aliquet urna. Dictumst ac ac quis ut sagittis. Integer tristique id consequat turpis. Phasellus eget dictum quisque vitae at malesuada sit. Vitae nunc morbi faucibus scelerisque nisi vitae ut nunc. Pretium lectus turpis etiam praesent lectus diam.",
+    "title": "Get in Touch",
+    "formDescription": "Our friendly team would love to hear from you.",
+    "buttonText": "Send Message",
+    "fieldsData": [
+      {
+        "id": "firstName",
+        "label": "First Name",
+        "placeholder": "first name",
+        "type": "text"
+      },
+      {
+        "id": "lastName",
+        "label": "Last Name",
+        "placeholder": "last name",
+        "type": "text"
+      },
+      {
+        "id": "email",
+        "label": "Email",
+        "placeholder": "email",
+        "type": "email"
+      },
+      {
+        "id": "contactNumber",
+        "label": "Contact Number",
+        "placeholder": "contact number",
+        "type": "phone"
+      },
+      {
+        "id": "message",
+        "label": "Message",
+        "placeholder": "message",
+        "type": "textarea"
+      }
+    ]
+  } 
