@@ -14,7 +14,7 @@ import { getHomeInformation ,getProducts} from "../../service/index";
 export default async function Page() {
   const homeData = await getHomeInformation();
   const ProductsData = await getProducts();
-
+ 
   return (
     <>
       <Banner sliderData={homeData.slider} />
