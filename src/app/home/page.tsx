@@ -10,7 +10,7 @@ import PerspectivesCorner from "../component/home/PerspectivesCorner";
 import FollowUs from "../component/home/FollowUs";
 import Service from "../component/home/Service";
 import { getHomeInformation ,getProducts} from "../../service/index";
-
+ 
 export default async function Page() {
   const homeData = await getHomeInformation();
   const ProductsData = await getProducts();

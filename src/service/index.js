@@ -105,13 +105,12 @@ export const getInstaProducts = async (types) => {
     //   apiUrl += `?_page=1&_per_page=4`;
     // }
     const response = await axios.get(apiUrl, {
-      mode: 'no-cors',
       headers: {
         "Content-Type": "application/json",
       },
     });
 
-    return response.data.data;
+    return response.data;
   } catch (error) {
     console.error("Error fetching data:", error);
     throw error;
@@ -172,7 +171,6 @@ export const getSearchResult = async () => {
     let apiUrl = `${baseUrl}/results.json`;
 
     const response = await axios.get(apiUrl, {
-      mode: 'no-cors',
       headers: {
         "Content-Type": "application/json",
       },
