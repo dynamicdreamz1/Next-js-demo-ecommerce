@@ -1,0 +1,710 @@
+[
+    {
+      "id": 1,
+      "name": "Hello, Clear Skin Bar",
+      "productImages": [
+        "/images/product-details/p-detail-1.svg",
+        "/images/product-details/p-detail-2.svg",
+        "/images/product-details/p-detail-3.svg",
+        "/images/product-details/p-detail-4.svg",
+        "/images/product-details/p-detail-5.svg",
+        "/images/product-details/p-detail-6.svg"
+      ],
+      "price": 22,
+      "discountPrice": 15,
+      "category": 1,
+      "bestSeller": true,
+      "topRated": true,
+      "Accessories": false,
+      "Featured": false,
+      "rating": 5,
+      "type": "soap",
+      "popularity": 80,
+      "date": "2023-01-15",
+      "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.",
+      "fullDescription": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.",
+      "sku": "Product 010000589",
+      "size": [
+        {
+          "isAvailable": true,
+          "title": "50ml"
+        },
+        {
+          "isAvailable": false,
+          "title": "100ml"
+        },
+        {
+          "isAvailable": true,
+          "title": "200ml"
+        },
+        {
+          "isAvailable": true,
+          "title": "500ml"
+        }
+      ],
+      "service": [
+        {
+          "image": "/images/product-details/globe.svg",
+          "title": "Free shipping worldwide"
+        },
+        {
+          "image": "/images/product-details/credit-card.svg",
+          "title": "100% Secured Payment"
+        },
+        {
+          "image": "/images/product-details/Icon.svg",
+          "title": "Made by the Professionals"
+        }
+      ],
+      "reviews": [
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 4,
+          "description": "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the changes.",
+          "name": "John Doe",
+          "date": "May 24, 2024"
+        },
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 4,
+          "description": "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the changes.",
+          "name": "John Doe",
+          "date": "May 24, 2024"
+        },
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 4,
+          "description": "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the changes.",
+          "name": "John Doe",
+          "date": "May 24, 2024"
+        }
+      ],
+      "additionalInfo": [
+        {
+          "image": "/images/Frame-0.svg",
+          "title": "Lightweight Formula",
+          "description": "Duis eleifend ipsum a justo vehicula, ut vestibulum sem volutpat. Donec at aliquam purus. Mauris."
+        },
+        {
+          "image": "/images/Frame-1.svg",
+          "title": "Hygienically Manufactured",
+          "description": "Duis eleifend ipsum a justo vehicula, ut vestibulum sem volutpat. Donec at aliquam purus. Mauris."
+        },
+        {
+          "image": "/images/Frame-2.svg",
+          "title": "In-house Quality Control",
+          "description": "Duis eleifend ipsum a justo vehicula, ut vestibulum sem volutpat. Donec at aliquam purus. Mauris."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Silk Touch Moisturizer",
+      "productImages": [
+        "/images/product-details/p-detail-1.svg",
+        "/images/product-details/p-detail-2.svg",
+        "/images/product-details/p-detail-3.svg",
+        "/images/product-details/p-detail-4.svg",
+        "/images/product-details/p-detail-5.svg",
+        "/images/product-details/p-detail-6.svg"
+      ],
+      "price": 25,
+      "discountPrice": 8,
+      "bestSeller": true,
+      "topRated": true,
+      "Accessories": true,
+      "Featured": true,
+      "category": 2,
+      "rating": 4,
+      "type": "face-wash",
+      "popularity": 70,
+      "date": "2023-03-05",
+      "description": "A lightweight, hydrating moisturizer that leaves your skin feeling silky smooth. Enriched with natural ingredients.",
+      "fullDescription": "A lightweight, hydrating moisturizer that leaves your skin feeling silky smooth. Enriched with natural ingredients.",
+      "sku": "Product 030000589",
+      "size": [
+        {
+          "isAvailable": true,
+          "title": "50ml"
+        },
+        {
+          "isAvailable": false,
+          "title": "100ml"
+        },
+        {
+          "isAvailable": true,
+          "title": "200ml"
+        },
+        {
+          "isAvailable": true,
+          "title": "500ml"
+        }
+      ],
+      "service": [
+        {
+          "image": "/images/product-details/globe.svg",
+          "title": "Free shipping worldwide"
+        },
+        {
+          "image": "/images/product-details/credit-card.svg",
+          "title": "100% Secured Payment"
+        },
+        {
+          "image": "/images/product-details/Icon.svg",
+          "title": "Made by the Professionals"
+        }
+      ],
+      "reviews": [
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 4.5,
+          "description": "I absolutely love this moisturizer! It absorbs quickly into my skin and keeps it hydrated all day long. The silky texture feels amazing.",
+          "name": "Sarah Adams",
+          "date": "June 15, 2024"
+        },
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 4,
+          "description": "This moisturizer is perfect for my sensitive skin. It's gentle, non-greasy, and provides just the right amount of hydration. Highly recommend it!",
+          "name": "Emily Brown",
+          "date": "June 12, 2024"
+        }
+      ],
+      "additionalInfo": [
+        {
+          "image": "/images/Frame-0.svg",
+          "title": "Hydrating Formula",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non metus quis ex fermentum feugiat a id turpis."
+        },
+        {
+          "image": "/images/Frame-1.svg",
+          "title": "Suitable for Sensitive Skin",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non metus quis ex fermentum feugiat a id turpis."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Revitalize Eye Cream",
+      "productImages": [
+        "/images/product-details/p-detail-1.svg",
+        "/images/product-details/p-detail-2.svg",
+        "/images/product-details/p-detail-3.svg",
+        "/images/product-details/p-detail-4.svg",
+        "/images/product-details/p-detail-5.svg",
+        "/images/product-details/p-detail-6.svg"
+      ],
+      "price": 28,
+      "discountPrice": 25,
+      "bestSeller": false,
+      "topRated": true,
+      "Accessories": true,
+      "Featured": false,
+      "category": 3,
+      "rating": 3,
+      "type": "featured",
+      "popularity": 85,
+      "date": "2023-04-01",
+      "description": "Say goodbye to tired-looking eyes with our revitalizing eye cream. Formulated with nourishing ingredients to reduce puffiness and dark circles.",
+      "fullDescription": "Say goodbye to tired-looking eyes with our revitalizing eye cream. Formulated with nourishing ingredients to reduce puffiness and dark circles.",
+      "sku": "Product 040000589",
+      "size": [
+        {
+          "isAvailable": true,
+          "title": "50ml"
+        },
+        {
+          "isAvailable": false,
+          "title": "100ml"
+        },
+        {
+          "isAvailable": true,
+          "title": "200ml"
+        },
+        {
+          "isAvailable": true,
+          "title": "500ml"
+        }
+      ],
+      "service": [
+        {
+          "image": "/images/product-details/globe.svg",
+          "title": "Free shipping worldwide"
+        },
+        {
+          "image": "/images/product-details/credit-card.svg",
+          "title": "100% Secured Payment"
+        },
+        {
+          "image": "/images/product-details/Icon.svg",
+          "title": "Made by the Professionals"
+        }
+      ],
+      "reviews": [
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 4.2,
+          "description": "I've been using this eye cream for a few weeks now and I can already see a noticeable difference in the appearance of my under-eye area. It feels refreshing and absorbs quickly.",
+          "name": "Jessica Taylor",
+          "date": "June 20, 2024"
+        },
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 4,
+          "description": "This eye cream is lightweight and non-greasy, which I love. However, I haven't seen much improvement in my dark circles yet. Will continue using to see if there are any long-term effects.",
+          "name": "Sophia Clark",
+          "date": "June 18, 2024"
+        }
+      ],
+      "additionalInfo": [
+        {
+          "image": "/images/Frame-0.svg",
+          "title": "Reduces Puffiness",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non metus quis ex fermentum feugiat a id turpis."
+        },
+        {
+          "image": "/images/Frame-1.svg",
+          "title": "Brightens Dark Circles",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non metus quis ex fermentum feugiat a id turpis."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Luminous Facial Oil",
+      "productImages": [
+        "/images/product-details/p-detail-1.svg",
+        "/images/product-details/p-detail-2.svg",
+        "/images/product-details/p-detail-3.svg",
+        "/images/product-details/p-detail-4.svg",
+        "/images/product-details/p-detail-5.svg",
+        "/images/product-details/p-detail-6.svg"
+      ],
+      "price": 35,
+      "discountPrice": 30,
+      "bestSeller": false,
+      "topRated": true,
+      "Accessories": true,
+      "Featured": true,
+      "type": 4,
+      "category": "Home Fragrances",
+      "rating": 2,
+      "popularity": 75,
+      "date": "2023-05-25",
+      "description": "Indulge your skin with our luxurious facial oil. Enriched with botanical extracts, it nourishes and hydrates for a radiant complexion.",
+      "fullDescription": "Indulge your skin with our luxurious facial oil. Enriched with botanical extracts, it nourishes and hydrates for a radiant complexion.",
+      "sku": "Product 050000589",
+      "size": [
+        {
+          "isAvailable": true,
+          "title": "50ml"
+        },
+        {
+          "isAvailable": false,
+          "title": "100ml"
+        },
+        {
+          "isAvailable": true,
+          "title": "200ml"
+        },
+        {
+          "isAvailable": true,
+          "title": "500ml"
+        }
+      ],
+      "service": [
+        {
+          "image": "/images/product-details/globe.svg",
+          "title": "Free shipping worldwide"
+        },
+        {
+          "image": "/images/product-details/credit-card.svg",
+          "title": "100% Secured Payment"
+        },
+        {
+          "image": "/images/product-details/Icon.svg",
+          "title": "Made by the Professionals"
+        }
+      ],
+      "reviews": [
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 4.8,
+          "description": "This facial oil is a game-changer! It absorbs beautifully into the skin without leaving any greasy residue. My skin feels so soft and looks more radiant after using it.",
+          "name": "Olivia Wilson",
+          "date": "June 25, 2024"
+        },
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 5,
+          "description": "I'm obsessed with this facial oil! It has a lovely scent and leaves my skin feeling incredibly nourished and hydrated. Definitely a new staple in my skincare routine.",
+          "name": "Ava Martinez",
+          "date": "June 22, 2024"
+        }
+      ],
+      "additionalInfo": [
+        {
+          "image": "/images/Frame-0.svg",
+          "title": "Hydrating Formula",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non metus quis ex fermentum feugiat a id turpis."
+        },
+        {
+          "image": "/images/Frame-1.svg",
+          "title": "Radiant Complexion",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non metus quis ex fermentum feugiat a id turpis."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Radiant Glow Serum",
+      "productImages": [
+        "/images/product-details/p-detail-1.svg",
+        "/images/product-details/p-detail-2.svg",
+        "/images/product-details/p-detail-3.svg",
+        "/images/product-details/p-detail-4.svg",
+        "/images/product-details/p-detail-5.svg",
+        "/images/product-details/p-detail-6.svg"
+      ],
+      "price": 35.99,
+      "discountPrice": 20,
+      "bestSeller": false,
+      "topRated": false,
+      "Accessories": true,
+      "Featured": true,
+      "category": 5,
+      "type": 4,
+      "rating": 2,
+      "popularity": 90,
+      "date": "2023-06-18",
+      "description": "Achieve a radiant complexion with our glow-boosting serum.",
+      "fullDescription": "Achieve a radiant complexion with our glow-boosting serum. This lightweight formula is packed with nourishing ingredients that help to hydrate and brighten the skin. Perfect for all skin types.",
+      "sku": "Product 010000590",
+      "size": [
+        {
+          "isAvailable:": true,
+          "title": "30ml"
+        },
+        {
+          "isAvailable:": false,
+          "title": "50ml"
+        },
+        {
+          "isAvailable:": true,
+          "title": "100ml"
+        }
+      ],
+      "service": [
+        {
+          "image": "/images/product-details/globe.svg",
+          "title": "Free shipping worldwide"
+        },
+        {
+          "image": "/images/product-details/credit-card.svg",
+          "title": "100% Secured Payment"
+        },
+        {
+          "image": "/images/product-details/Icon.svg",
+          "title": "Cruelty-Free"
+        }
+      ],
+      "reviews": [
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 5,
+          "description": "This serum has transformed my skin! I've noticed a significant improvement in brightness and texture since using it.",
+          "name": "Emily Smith",
+          "date": "May 28, 2024"
+        },
+        {
+          "userAvatar": "/images/avtar2.svg",
+          "stars": 4,
+          "description": "I've been using this serum for a few weeks now and I'm loving the results. My skin feels smoother and looks more radiant.",
+          "name": "Jessica Brown",
+          "date": "May 25, 2024"
+        }
+      ],
+      "additionalInfo": [
+        {
+          "image": "/images/Frame-0.svg",
+          "title": "Brightening Formula",
+          "description": "Our serum contains powerful brightening agents that help to even out skin tone and reduce the appearance of dark spots."
+        },
+        {
+          "image": "/images/Frame-1.svg",
+          "title": "Hydrating Ingredients",
+          "description": "Formulated with hyaluronic acid and vitamin E, our serum provides long-lasting hydration and helps to lock in moisture."
+        },
+        {
+          "image": "/images/Frame-2.svg",
+          "title": "Antioxidant Protection",
+          "description": "Packed with antioxidants, our serum helps to protect the skin against environmental stressors and premature aging."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Silky Smooth Body Butter",
+      "productImages": [
+        "/images/product-details/p-detail-1.svg",
+        "/images/product-details/p-detail-2.svg",
+        "/images/product-details/p-detail-3.svg",
+        "/images/product-details/p-detail-4.svg",
+        "/images/product-details/p-detail-5.svg",
+        "/images/product-details/p-detail-6.svg"
+      ],
+      "price": 25.49,
+      "discountPrice": 12,
+      "category": 6,
+      "type": "soap",
+      "rating": 3,
+      "bestSeller": false,
+      "topRated": true,
+      "Accessories": true,
+      "Featured": true,
+      "popularity": 85,
+      "date": "2023-07-22",
+      "description": "Indulge in luxurious hydration with our silky smooth body butter.",
+      "fullDescription": "Indulge in luxurious hydration with our silky smooth body butter. Enriched with nourishing ingredients like shea butter and coconut oil, it deeply moisturizes and softens the skin, leaving it feeling silky smooth and hydrated.",
+      "sku": "Product 010000591",
+      "size": [
+        {
+          "isAvailable": true,
+          "title": "50ml"
+        },
+        {
+          "isAvailable": false,
+          "title": "100ml"
+        },
+        {
+          "isAvailable": true,
+          "title": "200ml"
+        },
+        {
+          "isAvailable": true,
+          "title": "500ml"
+        }
+      ],
+      "service": [
+        {
+          "image": "/images/product-details/globe.svg",
+          "title": "Free shipping on orders over $50"
+        },
+        {
+          "image": "/images/product-details/credit-card.svg",
+          "title": "Secure checkout"
+        },
+        {
+          "image": "/images/product-details/Icon.svg",
+          "title": "Natural Ingredients"
+        }
+      ],
+      "reviews": [
+        {
+          "userAvatar": "/images/avtar3.svg",
+          "stars": 4,
+          "description": "This body butter is amazing! It's so rich and creamy, and it absorbs quickly into the skin without leaving a greasy residue.",
+          "name": "Sophie Johnson",
+          "date": "May 26, 2024"
+        },
+        {
+          "userAvatar": "/images/avtar4.svg",
+          "stars": 4,
+          "description": "I love how this body butter makes my skin feel. It's super moisturizing and has a lovely scent.",
+          "name": "Oliver Wilson",
+          "date": "May 24, 2024"
+        }
+      ],
+      "additionalInfo": [
+        {
+          "image": "/images/Frame-0.svg",
+          "title": "Deep Hydration",
+          "description": "Our body butter provides deep hydration to dry and dehydrated skin, leaving it feeling soft and supple."
+        },
+        {
+          "image": "/images/Frame-1.svg",
+          "title": "Nourishing Ingredients",
+          "description": "Formulated with shea butter, coconut oil, and vitamin E, our body butter nourishes the skin and helps to improve its overall health."
+        },
+        {
+          "image": "/images/Frame-2.svg",
+          "title": "Fast Absorbing",
+          "description": "Despite its rich texture, our body butter absorbs quickly into the skin, providing instant relief to dryness and discomfort."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Revitalizing Facial Oil",
+      "productImages": [
+        "/images/product-details/p-detail-1.svg",
+        "/images/product-details/p-detail-2.svg",
+        "/images/product-details/p-detail-3.svg",
+        "/images/product-details/p-detail-4.svg",
+        "/images/product-details/p-detail-5.svg",
+        "/images/product-details/p-detail-6.svg"
+      ],
+      "price": 29.99,
+      "discountPrice": 10,
+      "type": "face-wash",
+      "bestSeller": true,
+      "topRated": true,
+      "Accessories": true,
+      "Featured": false,
+      "category": "Moisturisers",
+      "rating": 4,
+      "popularity": 88,
+      "date": "2023-08-14",
+      "description": "Restore radiance to your complexion with our revitalizing facial oil.",
+      "fullDescription": "Restore radiance to your complexion with our revitalizing facial oil. Infused with a blend of nourishing oils, it deeply hydrates and revitalizes the skin, leaving it looking plump, healthy, and glowing.",
+      "sku": "Product 010000592",
+      "size": [
+        {
+          "isAvailable:": true,
+          "title": "30ml"
+        },
+        {
+          "isAvailable:": true,
+          "title": "50ml"
+        }
+      ],
+      "service": [
+        {
+          "image": "/images/product-details/globe.svg",
+          "title": "Free shipping on all orders"
+        },
+        {
+          "image": "/images/product-details/credit-card.svg",
+          "title": "Secure online payments"
+        },
+        {
+          "image": "/images/product-details/Icon.svg",
+          "title": "Cruelty-Free"
+        }
+      ],
+      "reviews": [
+        {
+          "userAvatar": "/images/avtar5.svg",
+          "stars": 5,
+          "description": "This facial oil is a game-changer! It's lightweight yet deeply hydrating, and it leaves my skin feeling incredibly soft and smooth.",
+          "name": "Emma Wilson",
+          "date": "May 27, 2024"
+        },
+        {
+          "userAvatar": "/images/avtar6.svg",
+          "stars": 4,
+          "description": "I've been using this facial oil for a few weeks now and I'm loving the results. My skin looks more radiant and feels much more hydrated since incorporating it into my skincare routine.",
+          "name": "Sophia Martinez",
+          "date": "May 25, 2024"
+        }
+      ],
+      "additionalInfo": [
+        {
+          "image": "/images/Frame-0.svg",
+          "title": "Hydrating Formula",
+          "description": "Our facial oil is formulated with a blend of hydrating oils, including jojoba oil and argan oil, to replenish moisture and restore balance to the skin."
+        },
+        {
+          "image": "/images/Frame-1.svg",
+          "title": "Antioxidant Protection",
+          "description": "Packed with antioxidants like vitamin E and rosehip oil, our facial oil helps to protect the skin against environmental stressors and premature aging."
+        },
+        {
+          "image": "/images/Frame-2.svg",
+          "title": "Non-Greasy",
+          "description": "Despite its nourishing formula, our facial oil is lightweight and non-greasy, making it suitable for all skin types, including oily and acne-prone skin."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Hydrating Sheet Mask Set",
+      "productImages": [
+        "/images/product-details/p-detail-1.svg",
+        "/images/product-details/p-detail-2.svg",
+        "/images/product-details/p-detail-3.svg",
+        "/images/product-details/p-detail-4.svg",
+        "/images/product-details/p-detail-5.svg",
+        "/images/product-details/p-detail-6.svg"
+      ],
+      "price": 19.99,
+      "discountPrice": 15,
+      "category": "Home Spa & Massage",
+      "type": "featured",
+      "rating": 1,
+      "bestSeller": true,
+      "topRated": true,
+      "Accessories": true,
+      "Featured": false,
+      "popularity": 92,
+      "date": "2023-09-30",
+      "description": "Give your skin a boost of hydration with our hydrating sheet mask set.",
+      "fullDescription": "Give your skin a boost of hydration with our hydrating sheet mask set. Each mask is infused with a potent blend of hydrating ingredients that help to replenish moisture, leaving the skin looking plump, dewy, and revitalized.",
+      "sku": "Product 010000593",
+      "size": [
+        {
+          "isAvailable": true,
+          "title": "50ml"
+        },
+        {
+          "isAvailable": false,
+          "title": "100ml"
+        },
+        {
+          "isAvailable": true,
+          "title": "200ml"
+        },
+        {
+          "isAvailable": true,
+          "title": "500ml"
+        }
+      ],
+      "service": [
+        {
+          "image": "/images/product-details/globe.svg",
+          "title": "Free shipping on orders over $50"
+        },
+        {
+          "image": "/images/product-details/credit-card.svg",
+          "title": "Secure checkout"
+        },
+        {
+          "image": "/images/product-details/Icon.svg",
+          "title": "Cruelty-Free"
+        }
+      ],
+      "reviews": [
+        {
+          "userAvatar": "/images/avtar7.svg",
+          "stars": 5,
+          "description": "These sheet masks are amazing! They're super hydrating and leave my skin feeling incredibly soft and smooth. I love using them as part of my skincare routine.",
+          "name": "Isabella Clark",
+          "date": "May 27, 2024"
+        },
+        {
+          "userAvatar": "/images/avtar8.svg",
+          "stars": 4,
+          "description": "I've been using these sheet masks for a few weeks now and I've noticed a significant improvement in the hydration levels of my skin. It feels much more supple and dewy.",
+          "name": "Aiden Thompson",
+          "date": "May 25, 2024"
+        }
+      ],
+      "additionalInfo": [
+        {
+          "image": "/images/Frame-0.svg",
+          "title": "Deep Hydration",
+          "description": "Our sheet masks are formulated with a blend of hydrating ingredients, including hyaluronic acid and glycerin, to provide intense hydration and lock in moisture."
+        },
+        {
+          "image": "/images/Frame-1.svg",
+          "title": "Soothing Formula",
+          "description": "Infused with calming botanical extracts like chamomile and aloe vera, our sheet masks help to soothe and comfort the skin, reducing redness and irritation."
+        },
+        {
+          "image": "/images/Frame-2.svg",
+          "title": "Easy to Use",
+          "description": "Our sheet masks are individually packaged for convenience and are easy to use. Simply apply to clean skin, leave on for 10-15 minutes, and massage any excess serum into the skin."
+        }
+      ]
+    }
+  ] 

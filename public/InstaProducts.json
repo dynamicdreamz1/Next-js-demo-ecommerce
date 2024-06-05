@@ -1,0 +1,358 @@
+[
+    {
+      "id": 1,
+      "name": "Hello, Clear Skin Bar",
+      "productImages": [
+        "/images/product-details/p-detail-1.svg",
+        "/images/product-details/p-detail-2.svg",
+        "/images/product-details/p-detail-3.svg",
+        "/images/product-details/p-detail-4.svg",
+        "/images/product-details/p-detail-5.svg",
+        "/images/product-details/p-detail-6.svg"
+      ],
+      "price": 22,
+      "discountPrice": 15,
+      "category": 1,
+      "bestSeller": true,
+      "topRated": true,
+      "Accessories": false,
+      "Featured": false,
+      "rating": 5,
+      "type": "soap",
+      "popularity": 80,
+      "date": "2023-01-15",
+      "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.",
+      "fullDescription": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.",
+      "sku": "Product 010000589",
+      "size": [
+        {
+          "isAvailable": true,
+          "title": "50ml"
+        },
+        {
+          "isAvailable": false,
+          "title": "100ml"
+        },
+        {
+          "isAvailable": true,
+          "title": "200ml"
+        },
+        {
+          "isAvailable": true,
+          "title": "500ml"
+        }
+      ],
+      "service": [
+        {
+          "image": "/images/product-details/globe.svg",
+          "title": "Free shipping worldwide"
+        },
+        {
+          "image": "/images/product-details/credit-card.svg",
+          "title": "100% Secured Payment"
+        },
+        {
+          "image": "/images/product-details/Icon.svg",
+          "title": "Made by the Professionals"
+        }
+      ],
+      "reviews": [
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 4,
+          "description": "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the changes.",
+          "name": "John Doe",
+          "date": "May 24, 2024"
+        },
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 4,
+          "description": "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the changes.",
+          "name": "John Doe",
+          "date": "May 24, 2024"
+        },
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 4,
+          "description": "You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the changes.",
+          "name": "John Doe",
+          "date": "May 24, 2024"
+        }
+      ],
+      "additionalInfo": [
+        {
+          "image": "/images/Frame-0.svg",
+          "title": "Lightweight Formula",
+          "description": "Duis eleifend ipsum a justo vehicula, ut vestibulum sem volutpat. Donec at aliquam purus. Mauris."
+        },
+        {
+          "image": "/images/Frame-1.svg",
+          "title": "Hygienically Manufactured",
+          "description": "Duis eleifend ipsum a justo vehicula, ut vestibulum sem volutpat. Donec at aliquam purus. Mauris."
+        },
+        {
+          "image": "/images/Frame-2.svg",
+          "title": "In-house Quality Control",
+          "description": "Duis eleifend ipsum a justo vehicula, ut vestibulum sem volutpat. Donec at aliquam purus. Mauris."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Silk Touch Moisturizer",
+      "productImages": [
+        "/images/product-details/p-detail-1.svg",
+        "/images/product-details/p-detail-2.svg",
+        "/images/product-details/p-detail-3.svg",
+        "/images/product-details/p-detail-4.svg",
+        "/images/product-details/p-detail-5.svg",
+        "/images/product-details/p-detail-6.svg"
+      ],
+      "price": 25,
+      "discountPrice": 8,
+      "bestSeller": true,
+      "topRated": true,
+      "Accessories": true,
+      "Featured": true,
+      "category": 2,
+      "rating": 4,
+      "type": "face-wash",
+      "popularity": 70,
+      "date": "2023-03-05",
+      "description": "A lightweight, hydrating moisturizer that leaves your skin feeling silky smooth. Enriched with natural ingredients.",
+      "fullDescription": "A lightweight, hydrating moisturizer that leaves your skin feeling silky smooth. Enriched with natural ingredients.",
+      "sku": "Product 030000589",
+      "size": [
+        {
+          "isAvailable": true,
+          "title": "50ml"
+        },
+        {
+          "isAvailable": false,
+          "title": "100ml"
+        },
+        {
+          "isAvailable": true,
+          "title": "200ml"
+        },
+        {
+          "isAvailable": true,
+          "title": "500ml"
+        }
+      ],
+      "service": [
+        {
+          "image": "/images/product-details/globe.svg",
+          "title": "Free shipping worldwide"
+        },
+        {
+          "image": "/images/product-details/credit-card.svg",
+          "title": "100% Secured Payment"
+        },
+        {
+          "image": "/images/product-details/Icon.svg",
+          "title": "Made by the Professionals"
+        }
+      ],
+      "reviews": [
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 4.5,
+          "description": "I absolutely love this moisturizer! It absorbs quickly into my skin and keeps it hydrated all day long. The silky texture feels amazing.",
+          "name": "Sarah Adams",
+          "date": "June 15, 2024"
+        },
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 4,
+          "description": "This moisturizer is perfect for my sensitive skin. It's gentle, non-greasy, and provides just the right amount of hydration. Highly recommend it!",
+          "name": "Emily Brown",
+          "date": "June 12, 2024"
+        }
+      ],
+      "additionalInfo": [
+        {
+          "image": "/images/Frame-0.svg",
+          "title": "Hydrating Formula",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non metus quis ex fermentum feugiat a id turpis."
+        },
+        {
+          "image": "/images/Frame-1.svg",
+          "title": "Suitable for Sensitive Skin",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non metus quis ex fermentum feugiat a id turpis."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Revitalize Eye Cream",
+      "productImages": [
+        "/images/product-details/p-detail-1.svg",
+        "/images/product-details/p-detail-2.svg",
+        "/images/product-details/p-detail-3.svg",
+        "/images/product-details/p-detail-4.svg",
+        "/images/product-details/p-detail-5.svg",
+        "/images/product-details/p-detail-6.svg"
+      ],
+      "price": 28,
+      "discountPrice": 25,
+      "bestSeller": false,
+      "topRated": true,
+      "Accessories": true,
+      "Featured": false,
+      "category": 3,
+      "rating": 3,
+      "type": "featured",
+      "popularity": 85,
+      "date": "2023-04-01",
+      "description": "Say goodbye to tired-looking eyes with our revitalizing eye cream. Formulated with nourishing ingredients to reduce puffiness and dark circles.",
+      "fullDescription": "Say goodbye to tired-looking eyes with our revitalizing eye cream. Formulated with nourishing ingredients to reduce puffiness and dark circles.",
+      "sku": "Product 040000589",
+      "size": [
+        {
+          "isAvailable": true,
+          "title": "50ml"
+        },
+        {
+          "isAvailable": false,
+          "title": "100ml"
+        },
+        {
+          "isAvailable": true,
+          "title": "200ml"
+        },
+        {
+          "isAvailable": true,
+          "title": "500ml"
+        }
+      ],
+      "service": [
+        {
+          "image": "/images/product-details/globe.svg",
+          "title": "Free shipping worldwide"
+        },
+        {
+          "image": "/images/product-details/credit-card.svg",
+          "title": "100% Secured Payment"
+        },
+        {
+          "image": "/images/product-details/Icon.svg",
+          "title": "Made by the Professionals"
+        }
+      ],
+      "reviews": [
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 4.2,
+          "description": "I've been using this eye cream for a few weeks now and I can already see a noticeable difference in the appearance of my under-eye area. It feels refreshing and absorbs quickly.",
+          "name": "Jessica Taylor",
+          "date": "June 20, 2024"
+        },
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 4,
+          "description": "This eye cream is lightweight and non-greasy, which I love. However, I haven't seen much improvement in my dark circles yet. Will continue using to see if there are any long-term effects.",
+          "name": "Sophia Clark",
+          "date": "June 18, 2024"
+        }
+      ],
+      "additionalInfo": [
+        {
+          "image": "/images/Frame-0.svg",
+          "title": "Reduces Puffiness",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non metus quis ex fermentum feugiat a id turpis."
+        },
+        {
+          "image": "/images/Frame-1.svg",
+          "title": "Brightens Dark Circles",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non metus quis ex fermentum feugiat a id turpis."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Luminous Facial Oil",
+      "productImages": [
+        "/images/product-details/p-detail-1.svg",
+        "/images/product-details/p-detail-2.svg",
+        "/images/product-details/p-detail-3.svg",
+        "/images/product-details/p-detail-4.svg",
+        "/images/product-details/p-detail-5.svg",
+        "/images/product-details/p-detail-6.svg"
+      ],
+      "price": 35,
+      "discountPrice": 30,
+      "bestSeller": false,
+      "topRated": true,
+      "Accessories": true,
+      "Featured": true,
+      "type": 4,
+      "category": "Home Fragrances",
+      "rating": 2,
+      "popularity": 75,
+      "date": "2023-05-25",
+      "description": "Indulge your skin with our luxurious facial oil. Enriched with botanical extracts, it nourishes and hydrates for a radiant complexion.",
+      "fullDescription": "Indulge your skin with our luxurious facial oil. Enriched with botanical extracts, it nourishes and hydrates for a radiant complexion.",
+      "sku": "Product 050000589",
+      "size": [
+        {
+          "isAvailable": true,
+          "title": "50ml"
+        },
+        {
+          "isAvailable": false,
+          "title": "100ml"
+        },
+        {
+          "isAvailable": true,
+          "title": "200ml"
+        },
+        {
+          "isAvailable": true,
+          "title": "500ml"
+        }
+      ],
+      "service": [
+        {
+          "image": "/images/product-details/globe.svg",
+          "title": "Free shipping worldwide"
+        },
+        {
+          "image": "/images/product-details/credit-card.svg",
+          "title": "100% Secured Payment"
+        },
+        {
+          "image": "/images/product-details/Icon.svg",
+          "title": "Made by the Professionals"
+        }
+      ],
+      "reviews": [
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 4.8,
+          "description": "This facial oil is a game-changer! It absorbs beautifully into the skin without leaving any greasy residue. My skin feels so soft and looks more radiant after using it.",
+          "name": "Olivia Wilson",
+          "date": "June 25, 2024"
+        },
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 5,
+          "description": "I'm obsessed with this facial oil! It has a lovely scent and leaves my skin feeling incredibly nourished and hydrated. Definitely a new staple in my skincare routine.",
+          "name": "Ava Martinez",
+          "date": "June 22, 2024"
+        }
+      ],
+      "additionalInfo": [
+        {
+          "image": "/images/Frame-0.svg",
+          "title": "Hydrating Formula",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non metus quis ex fermentum feugiat a id turpis."
+        },
+        {
+          "image": "/images/Frame-1.svg",
+          "title": "Radiant Complexion",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non metus quis ex fermentum feugiat a id turpis."
+        }
+      ]
+    }
+] 
