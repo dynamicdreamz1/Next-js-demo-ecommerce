@@ -11,12 +11,12 @@ const Blogs = ({ initialBlogs, totalPages }: any) => {
     initialBlogs.items.slice(0, 8)
   );
   const [pageCount, setPageCount] = useState(totalPages);
-  const [currentPage, setCurrentPage] = useState(1); // Initialized currentPage to 1
+  const [currentPage, setCurrentPage] = useState(0); // Initialized currentPage to 1
   const searchParams = useSearchParams();
   const page = searchParams.get("page");
 
   useEffect(() => {
-    setCurrentPage(page ? parseInt(page, 10) : 1); // Parse page to integer
+    setCurrentPage(page ? parseInt(page, 10) : 0); // Parse page to integer
   }, [page]);
 
   useEffect(() => {
@@ -25,12 +25,8 @@ const Blogs = ({ initialBlogs, totalPages }: any) => {
 
   const fetchBlogs = async (page: any) => {
     const { data, total }: any = await getBlogs(page);
-    setFilteredBlogs(data.items.slice(0, 8)); // Corrected the slicing here
+    setFilteredBlogs(data.items.slice(page, 8)); // Corrected the slicing here
     setPageCount(total);
-  };
-
-  const handlePageChange = (selectedPage: any) => {
-    setCurrentPage(selectedPage + 1);
   };
 
   return (
@@ -64,7 +60,7 @@ const Blogs = ({ initialBlogs, totalPages }: any) => {
       </div>
 
       <div className="flex justify-center mt-10">
-        <Pagination pageCount={pageCount} onPageChange={handlePageChange} />
+        <Pagination pageCount={pageCount} setCurrentPage={setCurrentPage} currentPage={currentPage} />
       </div>
     </div>
   );

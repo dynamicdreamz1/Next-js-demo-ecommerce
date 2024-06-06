@@ -40,7 +40,7 @@ const Footer = ({ footerItems }: any) => {
                       ? faInstagram
                       : data.icon === "faTwitter"
                       ? faTwitter
-                      : null
+                      : faGithub // Default to a fallback icon if data.icon is not recognized
                   }
                   className="icon"
                 />

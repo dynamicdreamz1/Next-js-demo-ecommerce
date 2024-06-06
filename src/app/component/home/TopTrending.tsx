@@ -1,27 +1,76 @@
 "use client";
-import {  useState } from "react";
+import {  useState, useEffect } from "react";
 import Card from "../common/Card";
 import TrendingProductHeader from "../common/TrendingProductHeader";
 // import { getProducts } from "../../../service/index";
 import Image from "next/image";
 
+interface Product {
+  id: number;
+  name: string;
+  productImages: string[];
+  price: number;
+  discountPrice: number;
+  category: number;
+  bestSeller: boolean;
+  topRated: boolean;
+  Accessories: boolean;
+  Featured: boolean;
+  rating: number;
+  type: string;
+  popularity: number;
+  date: string;
+  description: string;
+  fullDescription: string;
+  sku: string;
+  size: {
+    isAvailable: boolean;
+    title: string;
+  }[];
+  service: {
+    image: string;
+    title: string;
+  }[];
+  reviews: {
+    userAvatar: string;
+    stars: number;
+    description: string;
+    name: string;
+    date: string;
+  }[];
+  additionalInfo: {
+    image: string;
+    title: string;
+    description: string;
+  }[];
+}
+
 const TopTrending = ({ homePageText,ProductsData }: any) => {
   const [activeTab, setActiveTab] = useState(homePageText?.tabs[0]?.code);
-  // const [productsForActiveTab, setProductsForActiveTab] = useState<Product[]>([]);
+  const [productsForActiveTab, setProductsForActiveTab] = useState<Product[]>(ProductsData);
 
-  // const fetchTabProduct = async () => {
-  //   try {
-  //     // let param = `${activeTab}=true`;
-  //     const ProductsData = await getProducts();
-  //     setProductsForActiveTab(ProductsData);
-  //   } catch (error) {
-  //     console.error("Error fetching products:", error);
-  //   }
-  // };
+  const fetchTabProduct = async () => {
+    try {
+      // Check if activeTab is a valid property of Product
+      if (!(activeTab in ProductsData[0])) {
+        console.error(`Invalid activeTab: ${activeTab}`);
+        return;
+      }
+  
+      const filteredProducts = ProductsData.filter((product: Product) => {
+        return product[activeTab as keyof Product] === true;
+      });
+  
+      setProductsForActiveTab(filteredProducts);
+    } catch (error) {
+      console.error("Error fetching products:", error);
+    }
+  };
+  
 
-  // useEffect(() => {
-  //   fetchTabProduct();
-  // }, [activeTab]);
+  useEffect(() => {
+    fetchTabProduct();
+  }, [activeTab]);
 
   return (
     <div className="relative">
@@ -45,7 +94,7 @@ const TopTrending = ({ homePageText,ProductsData }: any) => {
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Map over the productsForActiveTab array */}
-          {ProductsData.map((product:any) => (
+          {productsForActiveTab.map((product:any) => (
             // <Link href={`/shop/${product.id}`} key={product.id}>
             <div key={product.id}>
               <Card product={product} />

@@ -13,7 +13,7 @@ const MenuItems = ({
 
   return (
     <div
-      className={`flex ${
+      className={`flex lg:justify-start	md:justify-start justify-center ${
         isMobileMenuOpen ? `flex-col gap-5` : `flex-row gap-10`
       } relative md:gap-5`}
     >

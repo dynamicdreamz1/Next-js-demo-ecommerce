@@ -98,7 +98,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "Silk Touch Moisturizer",
       "productImages": [
         "/images/product-details/p-detail-1.svg",
@@ -184,7 +184,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 3,
       "name": "Revitalize Eye Cream",
       "productImages": [
         "/images/product-details/p-detail-1.svg",
@@ -270,7 +270,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 4,
       "name": "Luminous Facial Oil",
       "productImages": [
         "/images/product-details/p-detail-1.svg",
@@ -356,7 +356,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 5,
       "name": "Radiant Glow Serum",
       "productImages": [
         "/images/product-details/p-detail-1.svg",
@@ -443,7 +443,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 6,
       "name": "Silky Smooth Body Butter",
       "productImages": [
         "/images/product-details/p-detail-1.svg",
@@ -534,7 +534,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": 7,
       "name": "Revitalizing Facial Oil",
       "productImages": [
         "/images/product-details/p-detail-1.svg",
@@ -617,7 +617,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": 8,
       "name": "Hydrating Sheet Mask Set",
       "productImages": [
         "/images/product-details/p-detail-1.svg",
@@ -704,6 +704,543 @@
           "image": "/images/Frame-2.svg",
           "title": "Easy to Use",
           "description": "Our sheet masks are individually packaged for convenience and are easy to use. Simply apply to clean skin, leave on for 10-15 minutes, and massage any excess serum into the skin."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Glow Boost Serum",
+      "productImages": [
+        "/images/product-details/p-detail-1.svg",
+        "/images/product-details/p-detail-2.svg",
+        "/images/product-details/p-detail-3.svg"
+      ],
+      "price": 35,
+      "discountPrice": 30,
+      "category": 1,
+      "bestSeller": true,
+      "topRated": true,
+      "Accessories": false,
+      "Featured": false,
+      "rating": 4.8,
+      "type": "serum",
+      "popularity": 90,
+      "date": "2023-02-10",
+      "description": "A brightening serum that revitalizes dull skin and improves texture.",
+      "fullDescription": "A brightening serum that revitalizes dull skin and improves texture. Enriched with vitamin C.",
+      "sku": "Product 050000589",
+      "size": [
+        {
+          "isAvailable": true,
+          "title": "30ml"
+        },
+        {
+          "isAvailable": true,
+          "title": "50ml"
+        },
+        {
+          "isAvailable": false,
+          "title": "100ml"
+        }
+      ],
+      "service": [
+        {
+          "image": "/images/product-details/globe.svg",
+          "title": "Free shipping worldwide"
+        },
+        {
+          "image": "/images/product-details/credit-card.svg",
+          "title": "100% Secured Payment"
+        },
+        {
+          "image": "/images/product-details/Icon.svg",
+          "title": "Made by the Professionals"
+        }
+      ],
+      "reviews": [
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 5,
+          "description": "This serum has transformed my skin! It's so much brighter and smoother.",
+          "name": "Anna White",
+          "date": "June 5, 2024"
+        },
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 4.5,
+          "description": "Great product, but a bit pricey. Still worth it for the results!",
+          "name": "Laura Green",
+          "date": "June 3, 2024"
+        }
+      ],
+      "additionalInfo": [
+        {
+          "image": "/images/Frame-0.svg",
+          "title": "Brightening Formula",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non metus quis ex fermentum feugiat a id turpis."
+        },
+        {
+          "image": "/images/Frame-1.svg",
+          "title": "Dermatologist Approved",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non metus quis ex fermentum feugiat a id turpis."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Soothing Aloe Gel",
+      "productImages": [
+        "/images/product-details/p-detail-1.svg",
+        "/images/product-details/p-detail-2.svg",
+        "/images/product-details/p-detail-3.svg"
+      ],
+      "price": 18,
+      "discountPrice": 12,
+      "category": 2,
+      "bestSeller": false,
+      "topRated": true,
+      "Accessories": false,
+      "Featured": false,
+      "rating": 4.3,
+      "type": "gel",
+      "popularity": 75,
+      "date": "2023-03-20",
+      "description": "A soothing gel made with pure aloe vera to calm irritated skin.",
+      "fullDescription": "A soothing gel made with pure aloe vera to calm irritated skin and provide hydration.",
+      "sku": "Product 060000589",
+      "size": [
+        {
+          "isAvailable": true,
+          "title": "50ml"
+        },
+        {
+          "isAvailable": false,
+          "title": "100ml"
+        },
+        {
+          "isAvailable": true,
+          "title": "200ml"
+        }
+      ],
+      "service": [
+        {
+          "image": "/images/product-details/globe.svg",
+          "title": "Free shipping worldwide"
+        },
+        {
+          "image": "/images/product-details/credit-card.svg",
+          "title": "100% Secured Payment"
+        },
+        {
+          "image": "/images/product-details/Icon.svg",
+          "title": "Made by the Professionals"
+        }
+      ],
+      "reviews": [
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 4.5,
+          "description": "This aloe gel is a lifesaver for my sensitive skin. It's cooling and effective.",
+          "name": "David Blue",
+          "date": "June 10, 2024"
+        },
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 4,
+          "description": "Very soothing, but I wish it came in a bigger size.",
+          "name": "Kevin Brown",
+          "date": "June 8, 2024"
+        }
+      ],
+      "additionalInfo": [
+        {
+          "image": "/images/Frame-0.svg",
+          "title": "Calming Effect",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non metus quis ex fermentum feugiat a id turpis."
+        },
+        {
+          "image": "/images/Frame-1.svg",
+          "title": "Pure Aloe Vera",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non metus quis ex fermentum feugiat a id turpis."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Charcoal Detox Mask",
+      "productImages": [
+        "/images/product-details/p-detail-1.svg",
+        "/images/product-details/p-detail-2.svg",
+        "/images/product-details/p-detail-3.svg"
+      ],
+      "price": 22,
+      "discountPrice": 18,
+      "category": 3,
+      "bestSeller": true,
+      "topRated": true,
+      "Accessories": false,
+      "Featured": false,
+      "rating": 4.7,
+      "type": "mask",
+      "popularity": 85,
+      "date": "2023-04-15",
+      "description": "A detoxifying mask with activated charcoal to cleanse pores.",
+      "fullDescription": "A detoxifying mask with activated charcoal to cleanse pores and leave skin feeling refreshed.",
+      "sku": "Product 070000589",
+      "size": [
+        {
+          "isAvailable": true,
+          "title": "50ml"
+        },
+        {
+          "isAvailable": true,
+          "title": "100ml"
+        }
+      ],
+      "service": [
+        {
+          "image": "/images/product-details/globe.svg",
+          "title": "Free shipping worldwide"
+        },
+        {
+          "image": "/images/product-details/credit-card.svg",
+          "title": "100% Secured Payment"
+        },
+        {
+          "image": "/images/product-details/Icon.svg",
+          "title": "Made by the Professionals"
+        }
+      ],
+      "reviews": [
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 5,
+          "description": "My skin feels so clean and fresh after using this mask. The charcoal really works wonders.",
+          "name": "Linda White",
+          "date": "June 6, 2024"
+        },
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 4.5,
+          "description": "A great detox mask. Helps with my acne and oily skin.",
+          "name": "Megan Green",
+          "date": "June 4, 2024"
+        }
+      ],
+      "additionalInfo": [
+        {
+          "image": "/images/Frame-0.svg",
+          "title": "Deep Cleansing",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non metus quis ex fermentum feugiat a id turpis."
+        },
+        {
+          "image": "/images/Frame-1.svg",
+          "title": "Activated Charcoal",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non metus quis ex fermentum feugiat a id turpis."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Hydrating Night Cream",
+      "productImages": [
+        "/images/product-details/p-detail-1.svg",
+        "/images/product-details/p-detail-2.svg",
+        "/images/product-details/p-detail-3.svg"
+      ],
+      "price": 30,
+      "discountPrice": 25,
+      "category": 1,
+      "bestSeller": true,
+      "topRated": true,
+      "Accessories": false,
+      "Featured": false,
+      "rating": 4.6,
+      "type": "cream",
+      "popularity": 80,
+      "date": "2023-05-01",
+      "description": "A rich night cream that deeply hydrates and repairs skin overnight.",
+      "fullDescription": "A rich night cream that deeply hydrates and repairs skin overnight. Infused with hyaluronic acid.",
+      "sku": "Product 080000589",
+      "size": [
+        {
+          "isAvailable": true,
+          "title": "50ml"
+        },
+        {
+          "isAvailable": true,
+          "title": "100ml"
+        },
+        {
+          "isAvailable": false,
+          "title": "200ml"
+        }
+      ],
+      "service": [
+        {
+          "image": "/images/product-details/globe.svg",
+          "title": "Free shipping worldwide"
+        },
+        {
+          "image": "/images/product-details/credit-card.svg",
+          "title": "100% Secured Payment"
+        },
+        {
+          "image": "/images/product-details/Icon.svg",
+          "title": "Made by the Professionals"
+        }
+      ],
+      "reviews": [
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 4.5,
+          "description": "This night cream is amazing! My skin feels so soft and hydrated in the morning.",
+          "name": "Sara Black",
+          "date": "June 12, 2024"
+        },
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 4,
+          "description": "Very effective night cream. A bit thick, but it absorbs well.",
+          "name": "Emma Brown",
+          "date": "June 10, 2024"
+        }
+      ],
+      "additionalInfo": [
+        {
+          "image": "/images/Frame-0.svg",
+          "title": "Deep Hydration",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non metus quis ex fermentum feugiat a id turpis."
+        },
+        {
+          "image": "/images/Frame-1.svg",
+          "title": "Overnight Repair",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non metus quis ex fermentum feugiat a id turpis."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Exfoliating Scrub",
+      "productImages": [
+        "/images/product-details/p-detail-1.svg",
+        "/images/product-details/p-detail-2.svg",
+        "/images/product-details/p-detail-3.svg"
+      ],
+      "price": 20,
+      "discountPrice": 15,
+      "category": 2,
+      "bestSeller": false,
+      "topRated": true,
+      "Accessories": false,
+      "Featured": false,
+      "rating": 4.4,
+      "type": "scrub",
+      "popularity": 70,
+      "date": "2023-05-20",
+      "description": "An exfoliating scrub that removes dead skin cells and unclogs pores.",
+      "fullDescription": "An exfoliating scrub that removes dead skin cells and unclogs pores, leaving skin smooth and refreshed.",
+      "sku": "Product 090000589",
+      "size": [
+        {
+          "isAvailable": true,
+          "title": "50ml"
+        },
+        {
+          "isAvailable": true,
+          "title": "100ml"
+        }
+      ],
+      "service": [
+        {
+          "image": "/images/product-details/globe.svg",
+          "title": "Free shipping worldwide"
+        },
+        {
+          "image": "/images/product-details/credit-card.svg",
+          "title": "100% Secured Payment"
+        },
+        {
+          "image": "/images/product-details/Icon.svg",
+          "title": "Made by the Professionals"
+        }
+      ],
+      "reviews": [
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 4.5,
+          "description": "This scrub is perfect for my oily skin. It leaves my face feeling so clean and smooth.",
+          "name": "Chris Grey",
+          "date": "June 15, 2024"
+        },
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 4,
+          "description": "Good scrub, but a bit harsh for sensitive skin. Use sparingly.",
+          "name": "Patricia Yellow",
+          "date": "June 13, 2024"
+        }
+      ],
+      "additionalInfo": [
+        {
+          "image": "/images/Frame-0.svg",
+          "title": "Removes Dead Skin",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non metus quis ex fermentum feugiat a id turpis."
+        },
+        {
+          "image": "/images/Frame-1.svg",
+          "title": "Unclogs Pores",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non metus quis ex fermentum feugiat a id turpis."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Vitamin E Face Oil",
+      "productImages": [
+        "/images/product-details/p-detail-1.svg",
+        "/images/product-details/p-detail-2.svg",
+        "/images/product-details/p-detail-3.svg"
+      ],
+      "price": 28,
+      "discountPrice": 20,
+      "category": 3,
+      "bestSeller": true,
+      "topRated": true,
+      "Accessories": false,
+      "Featured": false,
+      "rating": 4.9,
+      "type": "oil",
+      "popularity": 95,
+      "date": "2023-06-01",
+      "description": "A nourishing face oil enriched with vitamin E for a radiant complexion.",
+      "fullDescription": "A nourishing face oil enriched with vitamin E that promotes a radiant and healthy complexion.",
+      "sku": "Product 100000589",
+      "size": [
+        {
+          "isAvailable": true,
+          "title": "30ml"
+        },
+        {
+          "isAvailable": true,
+          "title": "50ml"
+        }
+      ],
+      "service": [
+        {
+          "image": "/images/product-details/globe.svg",
+          "title": "Free shipping worldwide"
+        },
+        {
+          "image": "/images/product-details/credit-card.svg",
+          "title": "100% Secured Payment"
+        },
+        {
+          "image": "/images/product-details/Icon.svg",
+          "title": "Made by the Professionals"
+        }
+      ],
+      "reviews": [
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 5,
+          "description": "This face oil has done wonders for my skin. It's so much smoother and more radiant now.",
+          "name": "Alice Blue",
+          "date": "June 17, 2024"
+        },
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 4.5,
+          "description": "Great oil for dry skin. Absorbs quickly without feeling greasy.",
+          "name": "Betty Green",
+          "date": "June 15, 2024"
+        }
+      ],
+      "additionalInfo": [
+        {
+          "image": "/images/Frame-0.svg",
+          "title": "Nourishing Formula",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non metus quis ex fermentum feugiat a id turpis."
+        },
+        {
+          "image": "/images/Frame-1.svg",
+          "title": "Promotes Radiance",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non metus quis ex fermentum feugiat a id turpis."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Cooling Eye Gel",
+      "productImages": [
+        "/images/product-details/p-detail-1.svg",
+        "/images/product-details/p-detail-2.svg",
+        "/images/product-details/p-detail-3.svg"
+      ],
+      "price": 25,
+      "discountPrice": 18,
+      "category": 1,
+      "bestSeller": false,
+      "topRated": true,
+      "Accessories": false,
+      "Featured": false,
+      "rating": 4.2,
+      "type": "gel",
+      "popularity": 65,
+      "date": "2023-06-10",
+      "description": "A cooling eye gel that reduces puffiness and refreshes tired eyes.",
+      "fullDescription": "A cooling eye gel that reduces puffiness and refreshes tired eyes, leaving them looking bright and awake.",
+      "sku": "Product 110000589",
+      "size": [
+        {
+          "isAvailable": true,
+          "title": "30ml"
+        },
+        {
+          "isAvailable": true,
+          "title": "50ml"
+        }
+      ],
+      "service": [
+        {
+          "image": "/images/product-details/globe.svg",
+          "title": "Free shipping worldwide"
+        },
+        {
+          "image": "/images/product-details/credit-card.svg",
+          "title": "100% Secured Payment"
+        },
+        {
+          "image": "/images/product-details/Icon.svg",
+          "title": "Made by the Professionals"
+        }
+      ],
+      "reviews": [
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 4.5,
+          "description": "Love this eye gel! It's very refreshing and really helps with my morning puffiness.",
+          "name": "Kathy Red",
+          "date": "June 22, 2024"
+        },
+        {
+          "userAvatar": "/images/avtar1.svg",
+          "stars": 4,
+          "description": "Good product, but takes a bit to show results. Feels nice and cool though.",
+          "name": "Lily Yellow",
+          "date": "June 20, 2024"
+        }
+      ],
+      "additionalInfo": [
+        {
+          "image": "/images/Frame-0.svg",
+          "title": "Reduces Puffiness",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non metus quis ex fermentum feugiat a id turpis."
+        },
+        {
+          "image": "/images/Frame-1.svg",
+          "title": "Brightens Eyes",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non metus quis ex fermentum feugiat a id turpis."
         }
       ]
     }

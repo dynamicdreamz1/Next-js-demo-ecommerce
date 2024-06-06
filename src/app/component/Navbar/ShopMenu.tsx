@@ -11,7 +11,7 @@ const ShopMenu = ({ setIsShopMenuOpen, shopMenuItems, imagesMenu }: any) => {
       <div className="grid grid-cols-4 gap-8">
         {/* First Column */}
         <div>
-          {shopMenuItems.slice(0, 5).map((item: any, index: any) => (
+          {shopMenuItems.slice(0, 6).map((item: any, index: any) => (
             <Link
               href={item.link}
               key={index}
@@ -25,7 +25,7 @@ const ShopMenu = ({ setIsShopMenuOpen, shopMenuItems, imagesMenu }: any) => {
         {/* Second Column (conditional rendering) */}
         {shopMenuItems.length > 5 && (
           <div>
-            {shopMenuItems.slice(5).map((item: any, index: any) => (
+            {shopMenuItems.slice(6).map((item: any, index: any) => (
               <Link
                 href={item.link}
                 key={index}

@@ -70,9 +70,8 @@ const Products: React.FC<{
   const [selectedCategories, setSelectedCategories] = useState<number[]>([]);
   const [selectedRatings, setSelectedRatings] = useState<number[]>([]);
   const [currentPage, setCurrentPage] = useState(0);
-  const [totalPage] = useState(
-    Math.ceil(initialProducts.length / PER_PAGE)
-  );
+  const [totalPage] = useState(Math.ceil(initialProducts.length / PER_PAGE));
+  const [showLoader, setShowLoader] = useState(true);
 
   // Filter products based on selected options
   useEffect(() => {
@@ -82,11 +81,12 @@ const Products: React.FC<{
     selectedCategories,
     selectedRatings,
     currentPage,
-    allProducts
+    allProducts,
   ]);
 
   // Function to filter products
   const filterProducts = () => {
+    setShowLoader(true);
     let filtered = [...allProducts]; // Copy all products
 
     // Filter by selected categories
@@ -128,8 +128,17 @@ const Products: React.FC<{
       }
     }
 
+    // Hide loader after a delay (e.g., 2 seconds)
+    setTimeout(() => {
+      setShowLoader(false);
+    }, 500);
+
+    
+    
     // Paginate filtered products
     const offset = currentPage * PER_PAGE;
+    console.log("currentPage",offset,currentPage,initialProducts);
+
     const slicedProducts = filtered.slice(offset, offset + PER_PAGE);
     setFilteredProducts(slicedProducts);
   };
@@ -149,10 +158,6 @@ const Products: React.FC<{
     setSelectedRatings(ratings);
   };
 
-  // Handler for changing current page
-  const handlePageChange = (selectedPage: any) => {
-    setCurrentPage(selectedPage);
-  };
 
   // Check if there are products to display
   const hasProducts = filteredProducts && filteredProducts.length > 0;
@@ -166,7 +171,7 @@ const Products: React.FC<{
     <div className="container mx-auto mt-5">
       {/* Dropdown for selecting filter option */}
 
-      <div className="flex lg:justify-between flex-col lg:flex-row  gap-5 justify-center max-w-full lg:mr-[1%] px-10 mt-14 mb-5">
+      <div className="flex lg:justify-between flex-col lg:flex-row  gap-5 justify-center lg:w-[97%] md:w-full mx-auto w-[320px] md:w-full lg:mr-[2%] lg:px-10 md:px-10 mt-14 mb-5">
         <Breadcrumbs breadcrumbs={bredCumData} />
         <CustomDropdown
           options={filterCategory.filter}
@@ -175,38 +180,35 @@ const Products: React.FC<{
       </div>
 
       {/* Product filter component */}
-      <div className="flex gap-5 justify-center ">
+      <div className="flex lg:flex-row flex-col gap-5  lg:justify-between justify-center w-[92.5%] h-max mx-auto">
         <ProductFilter
           filterCategory={filterCategory.categories}
           onCategoryChange={handleCategoryChange}
           onRatingChange={handleRatingChange}
         />
-
         {/* Product cards grid */}
-        <div className="flex gap-5 ">
-          {hasProducts ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="flex justify-center gap-5">
+          {showLoader ? (
+            <div className="lg:w-[500px] w-[50px] h-[50px] m-auto">
+                <div className="spinner"></div>
+            </div>
+          ) : !showLoader && hasProducts ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {filteredProducts.map((product: any, index: any) => (
-                // <Link href={`/shop/${product.id}`} key={index}>
-                <div
-                  className="outline-none focus:outline-none px-5"
-                  key={index}
-                >
+                <div key={index} className="w-full max-w-sm mx-auto">
                   <Card product={product} />
                 </div>
-                // </Link>
               ))}
             </div>
-          ) : (
+          ) : !showLoader && !hasProducts ? (
             // Show not found image if no products found
-            <div className="flex flex-col justify-center items-center mx-12 w-full ">
+            <div className="flex flex-col items-center justify-center">
               <Image
                 src="/images/notfound.svg"
                 alt="Not Found"
                 width={300}
                 height={300}
               />
-
               <Image
                 src="/images/no-product.svg"
                 alt="Not Found"
@@ -215,14 +217,14 @@ const Products: React.FC<{
                 height="0"
               />
             </div>
-          )}
+          ) : ""}
         </div>
       </div>
 
       {/* Pagination component */}
-      {hasProducts && (
+      {(!showLoader && hasProducts) && (
         <div className="flex justify-center mt-10">
-          <Pagination pageCount={totalPage} onPageChange={handlePageChange} />
+          <Pagination pageCount={totalPage} setCurrentPage={setCurrentPage} currentPage={currentPage}/>
         </div>
       )}
     </div>

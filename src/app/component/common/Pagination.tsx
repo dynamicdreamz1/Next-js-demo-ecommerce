@@ -1,18 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactPaginate from "react-paginate";
 
 interface PaginationProps {
   pageCount: number;
-  onPageChange: (selectedPage: number) => void;
+  setCurrentPage: (selectedPage: number) => void;
+  currentPage:number
 }
 
-const Pagination: React.FC<PaginationProps> = ({ pageCount, onPageChange }) => {
-  const [currentPage, setCurrentPage] = useState(0);
+const Pagination: React.FC<PaginationProps> = ({ pageCount, setCurrentPage,currentPage }) => {
 
   // Function to handle page click
   const handlePageClick = (selectedPage: { selected: number }) => {
     setCurrentPage(selectedPage.selected);
-    onPageChange(selectedPage.selected);
   };
 
   return (

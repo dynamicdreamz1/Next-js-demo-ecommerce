@@ -82,6 +82,11 @@ const Cart = ({ toggleCart, setIsCartOpen }: any) => {
      router.push('/check-out')
   }
 
+  const shopredirect = () =>{
+    setIsCartOpen(false)
+     router.push('/shop')
+  }
+
   if (cartItems?.length === 0) {
     return (
       <div className={`fixed right-0 ${isAtTop ? "top-20" : "top-0"} ${isMobile ? "w-full" : "lg:w-[23rem]"} overflow-x-hidden	h-full bg-[#FFF7F4] shadow-lg z-50 overflow-y-auto cart-container cart-toggle-button`}>
@@ -110,7 +115,7 @@ const Cart = ({ toggleCart, setIsCartOpen }: any) => {
             Looks like you haven’t added anything to your cart. Go ahead explore
             top categories
           </p>
-          <button className="bg-[#1E1E1E] text-white px-4 py-2 rounded-md mt-4">
+          <button className="bg-[#1E1E1E] text-white px-4 py-2 rounded-md mt-4" onClick={shopredirect}>
             Continue Shopping
           </button>
         </div>

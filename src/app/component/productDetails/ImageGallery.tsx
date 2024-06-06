@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import React,{ useState } from "react";
 import Image from "next/image";
 
 const ImageGallery = ({ productImages }: any) => {
@@ -27,7 +27,6 @@ const ImageGallery = ({ productImages }: any) => {
           src={selectedImage}
           alt="Selected"
           fill
-          objectFit="cover"
           className="rounded-md"
         />
       </div>

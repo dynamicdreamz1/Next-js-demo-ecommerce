@@ -45,7 +45,7 @@ const TrendingProducts = ({ homePageText,ProductsData }: any) => {
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {/* Map over the productsForActiveTab array */}
-          {ProductsData.map((product:any) => (
+          {ProductsData.slice(0,9).map((product:any) => (
             <SmallCard key={product.id} product={product} />
           ))}
         </div>

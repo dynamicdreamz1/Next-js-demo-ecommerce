@@ -8,6 +8,7 @@ import Search from "../Navbar/Search";
 import CartIcon from "../Navbar/CartIcon";
 import ShopMenu from "../Navbar/ShopMenu";
 import { getSearchResult } from "../../../service/index";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = ({ headerItems }: any) => {
   // State variables
@@ -25,26 +26,26 @@ const Navbar = ({ headerItems }: any) => {
     setIsCartOpen(!isCartOpen);
   };
 
-  
   const getResult = async () => {
     const data = await getSearchResult();
     return data;
   };
 
   // Function to handle search input change
-  const handleSearchChange = (e) => {
+  const handleSearchChange = (e:any) => {
     const query = e.target.value;
     setSearchQuery(query);
   };
 
-  useEffect(()=>{
-    getResult().then((data)=>{
-      setSearchResults(data);
-    }).catch((err)=>{
-      console.log(err);
-    })
-
-  },[searchQuery])
+  useEffect(() => {
+    getResult()
+      .then((data) => {
+        setSearchResults(data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, [searchQuery]);
 
   // Function to toggle mobile menu
   const toggleMobileMenu = () => {
@@ -52,7 +53,7 @@ const Navbar = ({ headerItems }: any) => {
   };
 
   useEffect(() => {
-    const handleClick = (event:any) => {
+    const handleClick = (event: any) => {
       // Check if the click occurred inside the cart container or its toggle button
       const isClickInsideCart =
         event.target.closest(".cart-container") ||
@@ -88,7 +89,7 @@ const Navbar = ({ headerItems }: any) => {
                 width={110}
                 height={53}
                 alt="Logo"
-                style={{ width: "auto", height: "auto" }} 
+                style={{ width: "auto", height: "auto" }}
               />
             </Link>
           </div>
@@ -155,23 +156,42 @@ const Navbar = ({ headerItems }: any) => {
         </div>
 
         {/* Render Cart */}
-        {isCartOpen && (
-          <Cart toggleCart={toggleCart} setIsCartOpen={setIsCartOpen} />
-        )}
+        <AnimatePresence>
+          {isCartOpen && (
+            <motion.div
+              className={`fixed top-0 right-0 bottom-0 w-60 z-50`}
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ type: "spring", stiffness: 100, damping: 20 }}
+            >
+              <Cart toggleCart={toggleCart} setIsCartOpen={setIsCartOpen} />
+            </motion.div>
+          )}
+        </AnimatePresence>
 
         {/* Sidebar Menu (for mobile) */}
         {isMobileMenuOpen && (
           <div className="fixed inset-0 bg-gray-800 bg-opacity-75 z-50">
-            <div className="absolute inset-y-0 right-0 w-64 bg-white shadow-lg">
+            <div className="absolute inset-y-0 right-0 w-[10rem] bg-white shadow-lg">
               <div className="py-4 px-6">
-                {/* Menu Items */}
-                <MenuItems
-                  setIsShopMenuOpen={setIsShopMenuOpen}
-                  menus={headerItems.menus}
-                  setHoverIndex={setHoverIndex}
-                  isMobileMenuOpen={isMobileMenuOpen}
-                  toggleMobileMenu={toggleMobileMenu}
-                />
+                <AnimatePresence>
+                  <motion.div
+                    className={`fixed top-0 right-0 bottom-0 w-[8rem] z-50`}
+                    initial={{ x: "100%" }}
+                    animate={{ x: 0 }}
+                    exit={{ x: "100%" }}
+                    transition={{ type: "spring", stiffness: 100, damping: 20 }}
+                  >
+                    <MenuItems
+                      setIsShopMenuOpen={setIsShopMenuOpen}
+                      menus={headerItems.menus}
+                      setHoverIndex={setHoverIndex}
+                      isMobileMenuOpen={isMobileMenuOpen}
+                      toggleMobileMenu={toggleMobileMenu}
+                    />
+                  </motion.div>
+                </AnimatePresence>
               </div>
             </div>
           </div>

@@ -11,12 +11,14 @@ const Page = async () => {
   const { data: initialBlogs, total: totalPages }: any = await getBlogs();
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <Blogs initialBlogs={initialBlogs} totalPages={totalPages} />
-      <FollowUs />
-      <Service homePageText={homeData.Service} />
-      <Subscribe homePageText={homeData.Subscribe} />
-    </Suspense>
+    <div className="flex flex-col justify-center items-center min-h-screen">
+      <Suspense fallback={<div className="w-16 h-16 border-4 border-dotted border-gray-300 border-t-transparent rounded-full spinner"></div>}>
+        <Blogs initialBlogs={initialBlogs} totalPages={totalPages} />
+        <FollowUs />
+        <Service homePageText={homeData.Service} />
+        <Subscribe homePageText={homeData.Subscribe} />
+      </Suspense>
+    </div>
   );
 };
 

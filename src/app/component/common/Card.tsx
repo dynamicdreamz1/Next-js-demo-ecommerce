@@ -54,7 +54,6 @@ const Card = ({ product }: any) => {
             product?.productImages[1]
           }
           alt="Product Image"
-          objectFit="cover"
           width={315}
           height={305}
         />

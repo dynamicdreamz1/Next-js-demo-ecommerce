@@ -18,10 +18,10 @@ const CustomDropdown = ({ options, onSelectOption }: any) => {
   };
 
   return (
-    <div className="relative lg:mx-0 mx-auto">
+    <div className="relative lg:mx-0 mx-auto lg:w-[320px] w-full md:px-4">
       <button
         onClick={handleToggleDropdown}
-        className="inline-flex justify-between items-center min-w-[320px] px-4 py-3 text-[16px] font-normal text-[#1E1E1E] border border-gray-300 shadow-sm  focus:outline-none"
+        className="inline-flex justify-between items-center lg:w-[320px] w-full px-4 py-3 text-[16px] font-normal text-[#1E1E1E] border border-gray-300 shadow-sm  focus:outline-none"
         aria-haspopup="listbox"
         aria-expanded="true"
         aria-labelledby="listbox-label"

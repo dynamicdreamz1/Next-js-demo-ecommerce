@@ -38,7 +38,7 @@ const Banner = ({sliderData}:any) => {
                 src={data.image}
                 alt="Slider Image"
                 layout="fill"
-                objectFit="cover"
+                className="object-cover"
               />
               <div
                 className={`absolute top-[20%] ${
