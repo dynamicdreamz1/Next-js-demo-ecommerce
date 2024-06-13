@@ -5,6 +5,7 @@ import PriceDetails from "../common/PriceDetails";
 import { paymentCardAllow } from "../../../utills/services";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons/faCheck";
+import Successfull from '../../component/finsh/Successfull';
 
 const Finish = ({ cartItems }: any) => {
   const [cardNumber, setCardNumber] = useState("");
@@ -14,6 +15,7 @@ const Finish = ({ cartItems }: any) => {
   const [cvv, setCvv] = useState("");
   const [upiId, setUpiId] = useState("");
   const [errors, setErrors] = useState<any>({});
+  const [showModal, setShowModal] = useState(false);
 
   const validateCardNumber = (number: string) => {
     const cardNumberPattern = /^\d{16}$/;
@@ -90,21 +92,22 @@ const Finish = ({ cartItems }: any) => {
     }
   };
 
+  const verifyUpi = () => {
+    validateUpiId(upiId);
+  };
+
+
   const handleSubmit = () => {
     validateCardNumber(cardNumber);
     validateCardOwner(cardOwner);
     validateExpiry(expiryMonth, expiryYear);
     validateCVV(cvv);
-    validateUpiId(upiId);
 
-    if (
-      !errors.cardNumber &&
-      !errors.cardOwner &&
-      !errors.expiry &&
-      !errors.cvv &&
-      !errors.upiId
-    ) {
-      // Submit form
+    
+    if (!errors.cardNumber && !errors.cardOwner && !errors.expiry && !errors.cvv) {
+      // handleFormSubmit();
+      
+      setShowModal(true);
     }
   };
 
@@ -338,7 +341,7 @@ const Finish = ({ cartItems }: any) => {
             <div>
               <Button
                 styleClass="w-full lg:w-[160px] border-1 border-[#000000] lg:px-3 rounded-tl-[5px] bg-[#000000] text-[#FFFFFF] text-[16px]"
-                onClick={handleSubmit}
+                onClick={verifyUpi}
               >
                 Verify UPI ID
               </Button>
@@ -349,7 +352,11 @@ const Finish = ({ cartItems }: any) => {
       </div>
 
       <div>
-        <PriceDetails cartItems={cartItems} />
+        <PriceDetails cartItems={cartItems} handleNextStep={handleSubmit}/>
+      </div>
+
+      <div>
+        {showModal && <Successfull onClose={() => setShowModal(false)} cartItems={cartItems}/>}
       </div>
     </div>
   );

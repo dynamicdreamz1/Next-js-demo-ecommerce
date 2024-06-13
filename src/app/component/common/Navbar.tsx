@@ -159,7 +159,7 @@ const Navbar = ({ headerItems }: any) => {
         <AnimatePresence>
           {isCartOpen && (
             <motion.div
-              className={`fixed top-0 right-0 bottom-0 w-60 z-50`}
+              className={`fixed top-0 right-0 bottom-0 md:w-[50%] lg:w-[30%] w-[90%] z-50`}
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}

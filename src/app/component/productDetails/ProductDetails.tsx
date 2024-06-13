@@ -42,7 +42,7 @@ const ProductDetails = ({ productDetails }: any) => {
       productId: productDetails.id,
       name: productDetails.name,
       price: productDetails.price,
-      discountPrice: productDetails.price,
+      discountPrice: productDetails.discountPrice,
       image:productDetails.productImages[0],
       quantity,
       size: selectedSize,

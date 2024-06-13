@@ -18,7 +18,7 @@ const Card = ({ product }: any) => {
       productId: product.id,
       name: product.name,
       price: product.price,
-      discountPrice: product.price,
+      discountPrice: product.discountPrice,
       image: product.productImages[0],
       quantity: 1,
       size: "",

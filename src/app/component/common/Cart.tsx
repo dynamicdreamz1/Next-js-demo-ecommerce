@@ -195,7 +195,7 @@ const Cart = ({ toggleCart, setIsCartOpen }: any) => {
           ))}
       </div>
       {/* Buttons at the bottom */}
-      <div className="ml-2 flex flex-col justify-center w-full absolute bottom-[15%]">
+      <div className="ml-2 flex flex-col justify-center w-[90%] absolute bottom-[15%]">
         <button className="bg-[#FB7800] text-white px-4 py-2 rounded-md m-2" onClick={redirect}>
           Checkout Now
         </button>
