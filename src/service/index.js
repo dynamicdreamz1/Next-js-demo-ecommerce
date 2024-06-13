@@ -393,7 +393,8 @@ export const addUserAddress = async (data = {}) => {
     // } catch (error) {
     //   //console.error("Error in POST request:", error);
     //   // Fallback to localStorage if API request fails
-      addUserAddressLocalStorage(data);
+    const localStorageResult = await addUserAddressLocalStorage(data);
+    return localStorageResult;
     // }
   } catch (error) {
     //console.error("Error in POST request:", error);
@@ -466,14 +467,26 @@ export const getUserDetails = async () => {
 };
 
 const addUserAddressLocalStorage = (data) => {
-  try {
-    let userAddresses = JSON.parse(localStorage.getItem("userAddresses")) || [];
-    userAddresses.push(data);
-    localStorage.setItem("userAddresses", JSON.stringify(userAddresses));
-  } catch (error) {
-   // //console.error("Error adding user address to localStorage:", error);
-  }
+  return new Promise((resolve, reject) => {
+    try {
+      let userAddresses = JSON.parse(localStorage.getItem("userAddresses")) || [];
+      userAddresses = userAddresses.map((item, index) => {
+        if (index < userAddresses.length) {
+          return { ...item, isSelected: false };
+        }
+        return item;
+      });
+
+      userAddresses.push(data);
+      localStorage.setItem("userAddresses", JSON.stringify(userAddresses));
+      resolve(true);
+    } catch (error) {
+      console.error("Error adding user address to localStorage:", error);
+      resolve(false);
+    }
+  });
 };
+
 
 const removeUserAddressLocalStorage = (itemId) => {
   try {
