@@ -5,6 +5,7 @@ import Card from "../common/Card";
 import CustomDropdown from "../common/CustomDropdown";
 import Breadcrumbs from "../common/Breadcrumbs";
 import Pagination from "../common/Pagination";
+import SkeletonCard from '../common/SkeletonCard';
 import Image from "next/image";
 const PER_PAGE = 9;
 interface Product {
@@ -189,9 +190,13 @@ const Products: React.FC<{
         {/* Product cards grid */}
         <div className="flex justify-center gap-5">
           {showLoader ? (
-            <div className="lg:w-[500px] w-[50px] h-[50px] m-auto">
-                <div className="spinner"></div>
-            </div>
+             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5">
+             {Array.from({ length: PER_PAGE }).map((_, index) => (
+               <div key={index} className="w-full max-w-sm mx-auto">
+                 <SkeletonCard />
+               </div>
+             ))}
+           </div>
           ) : !showLoader && hasProducts ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {filteredProducts.map((product: any, index: any) => (
