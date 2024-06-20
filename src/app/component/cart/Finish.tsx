@@ -5,7 +5,7 @@ import PriceDetails from "../common/PriceDetails";
 import { paymentCardAllow } from "../../../utills/services";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons/faCheck";
-import Successfull from '../../component/finsh/Successfull';
+import Successfull from "../../component/finsh/Successfull";
 
 const Finish = ({ cartItems }: any) => {
   const [cardNumber, setCardNumber] = useState("");
@@ -96,20 +96,48 @@ const Finish = ({ cartItems }: any) => {
     validateUpiId(upiId);
   };
 
-
   const handleSubmit = () => {
-    validateCardNumber(cardNumber);
-    validateCardOwner(cardOwner);
-    validateExpiry(expiryMonth, expiryYear);
-    validateCVV(cvv);
-
-    
-    if (!errors.cardNumber && !errors.cardOwner && !errors.expiry && !errors.cvv) {
-      // handleFormSubmit();
-      
+    let newErrors: any = {};
+  
+    // Check if either cardNumber or upiId is provided
+    if (!cardNumber && !upiId) {
+      newErrors.cardNumber = "Card number is required";
+      newErrors.upiId = "UPI ID is required";
+    } else if (cardNumber) {
+      // Validate card related fields
+      if (!cardOwner) {
+        newErrors.cardOwner = "Card owner is required";
+      }
+      if (!expiryMonth || !expiryYear) {
+        newErrors.expiry = "Expiry date is required";
+      }
+      if (!cvv) {
+        newErrors.cvv = "CVV is required";
+      }
+    }
+  
+    // Validate UPI ID
+    if (upiId) {
+      validateUpiId(upiId);
+    }
+  
+    // Collect all errors
+    setErrors(newErrors);
+  
+    // Run individual field validators if corresponding fields are not empty
+    if (cardNumber) {
+      validateCardNumber(cardNumber);
+      validateCardOwner(cardOwner);
+      validateExpiry(expiryMonth, expiryYear);
+      validateCVV(cvv);
+    }
+  
+    // If there are no errors in both errors and newErrors, show the modal
+    if (Object.keys(newErrors).length === 0 && Object.keys(errors).length === 0) {
       setShowModal(true);
     }
   };
+  
 
   const handleNumberInput = (
     e: React.ChangeEvent<HTMLInputElement>,
@@ -334,7 +362,7 @@ const Finish = ({ cartItems }: any) => {
 
               {!errors.upiId && upiId !== "" && (
                 <div className="rounded-full w-5 h-5 lg:w-7 lg:h-7 bg-white shadow flex items-center justify-center text-[#649C2C] m-auto mr-3 lg:[15px]">
-                 <FontAwesomeIcon icon={faCheck} />
+                  <FontAwesomeIcon icon={faCheck} />
                 </div>
               )}
             </div>
@@ -352,11 +380,16 @@ const Finish = ({ cartItems }: any) => {
       </div>
 
       <div>
-        <PriceDetails cartItems={cartItems} handleNextStep={handleSubmit}/>
+        <PriceDetails cartItems={cartItems} handleNextStep={handleSubmit} />
       </div>
 
       <div>
-        {showModal && <Successfull onClose={() => setShowModal(false)} cartItems={cartItems}/>}
+        {showModal && (
+          <Successfull
+            onClose={() => setShowModal(false)}
+            cartItems={cartItems}
+          />
+        )}
       </div>
     </div>
   );
